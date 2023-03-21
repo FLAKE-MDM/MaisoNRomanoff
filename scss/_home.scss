@@ -1,0 +1,49 @@
+.preview-home{
+    position: relative;
+    z-index: 95;
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 93.91%);
+        height: 46%;
+        z-index: 1;
+        @include bp(sm){
+            height: 35.9rem;
+        }
+    }
+    &__content{
+        padding: 10rem 0;
+        position: absolute;
+        top: 10rem;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        @include bp(xl){
+            padding: 5rem 0;
+        }
+        @include bp(md){
+            padding: 9.2rem 0;
+        }
+    }
+    &__link{
+        font-size: 5.1rem;
+        line-height: 6rem;
+        color: #fff;
+        letter-spacing: -0.1rem;
+        @include bp(xl){
+            font-size: 3.9rem;
+            line-height: 4.6rem;
+            margin-left: 1.5rem;
+        }
+        .icon{
+            margin-top: -0.2rem;
+        }
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+}

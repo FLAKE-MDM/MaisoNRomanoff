@@ -1,0 +1,137 @@
+a{
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    color: #000;
+    &:hover{
+        // color: $secondary;
+    }
+}
+.link_underline{
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    &:hover{
+        text-decoration: none!important;
+        border-color: transparent;
+    }
+}
+.title{
+    &_size{
+        &-xs{
+            font-size: 3.5rem;
+            line-height: 4.9rem;
+        }
+        &-sm{
+            font-size: 3.7rem;
+            line-height: 5.2rem;
+        }
+        &-md{
+            font-size: 4rem;
+            line-height: 5.6rem;
+        }
+        &-lg{
+            font-size: 5rem;
+            line-height: 7.05rem;
+        }
+        &-xl{
+            font-size: 6rem;
+            line-height: 8.4rem;
+        }
+        &-xl{
+            font-size: 8.12rem;
+            line-height: 11.45rem;
+        }
+    }
+
+}
+.text{
+    &_upper{
+        text-transform: uppercase;
+    }
+    // size
+    &_size{
+        &-xs{
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            @include bp(xl){
+                font-size: 0.95rem;
+                line-height: 1.1rem;
+            }
+            @include bp(md){
+                font-size: 0.75rem;
+                line-height: 0.9rem;
+            }
+        }
+        &-sm{
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+        }
+        &-smd{
+            font-size: 1.85rem;
+            line-height: 2.165rem;
+        }
+        &-md{
+            font-size: 2.5rem;
+            line-height: 2.9rem;
+            @include bp(xl){
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+            }
+            @include bp(md){
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+            }
+        }
+        &-lg{
+            font-size: 2.8rem;
+            line-height: 3.3rem;
+        }
+        &-xl{
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+    }
+    // colors
+    &_success{
+        color: $success;
+    }
+    &_warning{
+        color: $warning;
+    }
+    &_danger{
+        color: $danger;
+    }
+    // weight
+    &_normal{
+        font-weight: 400;
+    }
+    &_mediumbold{
+        font-weight: 500;
+    }
+    &_bold{
+        font-weight: 700;
+    }
+    // alignment
+    &_center{
+        text-align: center;
+        &_sm{
+            @include bp(sm){
+                text-align: center;
+            }
+        }
+    }
+    &_left{
+        text-align: left!important;
+    }
+    &_right{
+        text-align: right!important;
+    }
+    // other
+    &_styling{
+        font-weight: 900;
+        font-family: "Arial Black", sans-serif;
+    }
+    &_upper{
+        text-transform: uppercase;
+    }
+}
+

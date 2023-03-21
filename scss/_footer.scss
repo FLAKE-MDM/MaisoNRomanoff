@@ -1,0 +1,143 @@
+.footer{
+    margin-top: auto;
+    border-top: 1px solid #000;
+    @include bp(md){
+    }
+    &__logo{
+        width: 32.5%;
+        flex-shrink: 0;
+        padding: 0 1.5rem 2rem;
+        align-self: center;
+        @include bp(xl){
+            padding-bottom: 1rem;
+        }
+        @include bp(md){
+            width: 100%;
+            position: relative;
+            padding: 3.2rem 0 2.9rem;
+            &:after{
+                content: '';
+                display: block;
+                border-bottom: 0.05rem solid #000;
+                left: -20rem;
+                right: -20rem;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+        .logo{
+            @include bp(xxl-up){
+                font-size: 3.865rem;
+                line-height: 4.3rem;
+                letter-spacing: 0.45rem;
+            }
+        }
+    }
+    &__content{
+        flex-grow: 1;
+    }
+    &__row{
+        @include bp(md){
+            padding-left: 12%;
+        }
+    }
+    &__col{
+        padding-left: 9%;
+        @include bp(xl){
+            padding-left: 4.1%;
+        }
+    }
+    &-title{
+        margin: 4.1rem 0 3.7rem;
+        @include bp(xl){
+            font-size: 2rem;
+            line-height: 2.8rem;
+            margin: 2.3rem 0 1.3rem;
+        }
+        @include bp(md){
+            font-size: 1.6rem;
+            line-height: 2.25rem;
+            margin: 3rem 0 1.1rem;
+        }
+    }
+    &-nav{
+        letter-spacing: -0.07rem;
+        &__item{
+            margin-bottom: 2.6rem;
+            @include bp(xl){
+                margin-bottom: 1.1rem;
+                margin-right: 20%;
+            }
+            @include bp(md){
+                margin: 0 0 1.2rem;
+            }
+        }
+        &__link{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &__bottom{
+        border-top: 1px solid rgba(0, 0, 0, 0.33);
+        padding: 0.7rem 0 1.7rem;
+        margin-top: 4.3rem;
+        @include bp(xl){
+            margin-top: 2.7rem;
+            padding: 0.5rem 0 0.8rem;
+            .link_underline{
+                margin-right: 3.2rem;
+            }
+        }
+        @include bp(md){
+            margin-top: 1.9rem;
+            font-size: 1.1rem;
+            line-height: 1.3rem;
+            padding-bottom: 2rem;
+        }
+    }
+    &__links{
+        padding-left: 7.2%;
+        @include bp(md){
+            padding: 0;
+        }
+    }
+    &__design{
+        @include bp(xxl-up){
+            padding-top: 0.4rem;
+        }
+    }
+}
+.social-list{
+    margin-top: 0.8rem;
+    @include bp(xl){
+        margin-top: 0.5rem;
+    }
+    @include bp(md){
+        margin-top: 0.4rem;
+    }
+    &__item{
+        margin-right: 0.9rem;
+        @include bp(xl){
+            margin-right: 0.4rem;
+        }
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    &_md{
+        border-top: 0.05rem solid #000000;
+        border-bottom: 0.05rem solid #000000;
+        padding: 3rem 0 3.2rem;
+        @include bp(md){
+            border-bottom: none;
+            padding: 3.9rem 0;
+        }
+        .social-list__item{
+            margin: 0 1.1rem;
+            @include bp(md){
+                margin: 0 1.4rem;
+            }
+        }
+    }
+}

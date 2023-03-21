@@ -1,0 +1,240 @@
+.logo{
+    flex-shrink: 0;
+    font: 900 2.7rem/2.95rem "Arial Black", sans-serif;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    &:hover{opacity: 0.7;}
+    @include bp(xl){
+        font-size: 2.45rem;
+        line-height: 2.8rem;
+    }
+}
+.header{
+    position: relative;
+    padding: 3.1rem 0 2.4rem;
+    border-bottom: 0.05rem solid #000;
+    @include bp(xl){
+        padding: 2.3rem 0 1.4rem;
+    }
+    @include bp(md){
+        padding: 2rem 0 2.2rem;
+    }
+    &_inversion{
+        border-color: #FFF8F8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        .logo{
+            color: #fff;
+        }
+        .nav-list__link{
+            @include bp(xxl-up){
+                color: #fff;
+                &.active, &:hover{
+                    border-color: #fff;
+                }
+            }
+        }
+        .btn-menu__item{
+            background: #fff;
+        }
+        .active.btn-menu{
+            .btn-menu__item{
+                background: #000;
+            }
+        }
+    }
+    &__logo{
+        position: absolute;
+        top: 1.8rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 20rem;
+        text-align: center;
+        @include bp(xl){
+            top: 1.5rem;
+            left: 1.8rem;
+        }
+        @include bp(md){
+            left: 0;
+            top: 2.3rem;
+            font-size: 1.47rem;
+            line-height: 1.6rem;
+            letter-spacing: 0.15rem;
+        }
+    }
+}
+.navbar{
+    @include bp(xl){
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #fff;
+        transition: all 0.3s ease-out;
+        transform: translateX(-100%);
+        width: 42.3rem;
+        max-width: 100%;
+        z-index: 95;
+        bottom: 28.5rem;
+        display: flex;
+        flex-direction: column;
+        &.show{
+            transform: none;
+        }
+        @include bp(md){
+            bottom: 0;
+            overflow-y: auto;
+            width: 100%;
+        }
+    }
+    &__top{
+        @include bp(xl){
+            border-bottom: 0.05rem solid #000;
+            height: 8.2rem;
+        }
+        @include bp(md){
+            flex-shrink: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 2rem;
+            height: auto;
+        }
+    }
+    &__phone{
+        font-size: 2.7rem;
+        line-height: 3.1rem;
+        padding: 3.2rem 1.5rem 3.9rem;
+        @include bp(md){
+            font-size: 3rem;
+            line-height: 3.5rem;
+            margin-right: 0.6rem;
+            padding: 2.5rem 2rem;
+        }
+    }
+}
+.nav{
+    &__close{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+    &-list{
+        @include bp(xl){
+            padding: 7rem 5rem;
+        }
+        @include bp(md){
+            width: 12.4rem;
+            margin: 0 auto;
+            padding: 3.5rem 0;
+        }
+        &__item{
+            @include bp(xxl-up){
+               margin-right: 3rem;
+            }
+            @include bp(xxxl-up){
+                margin-right: 4.7rem;
+            }
+            @include bp(xl){
+                margin-bottom: 2.35rem;
+            }
+            @include bp(md){
+                margin-bottom: 2.7rem;
+            }
+        }
+        &__link{
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+            display: inline-flex;
+            border-bottom: 1px solid transparent;
+            padding: 0.2rem 0;
+            letter-spacing: -0.05rem;
+            &.active, &:hover{
+                border-color: #000;
+            }
+            @include bp(xl){
+               font-size: 3.6rem;
+               line-height: 4.2rem;
+               letter-spacing: -0.1rem;
+            }
+            @include bp(md){
+                font-size: 3rem;
+                line-height: 3.5rem;
+            }
+        }
+    }
+}
+.info-nav{
+    padding-top: 0.2rem;
+    @include bp(xl){
+        padding: 0.5rem 0.2rem 0 0;
+    }
+    @include bp(md){
+        padding-right: 0;
+    }
+    &__item{
+        margin-left: 4rem;
+        @include bp(md){
+            margin-left: 1.7rem;
+        }
+    }
+    &__link{
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    .icon-heart-inversion{
+        margin-top: 0.2rem;
+    }
+}
+.btn-menu{
+    display: block;
+    border: none;
+    align-self: center;
+    background: none;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 96;
+    &.active{
+        .btn-menu__item{
+            &:nth-of-type(1){
+                transform: rotate(24deg) translate(2px, 9px);
+                width: 5rem;
+                @include bp(md){
+                    width: 4rem;
+                    transform: rotate(30deg) translate(2px, 9px);
+                }
+            }
+            &:nth-of-type(2){
+                opacity: 0;
+            }
+            &:nth-of-type(3){
+                transform: rotate(-24deg) translate(3px, -11px);
+                width: 5rem;
+                @include bp(md){
+                    width: 4rem;
+                    transform: rotate(-30deg) translate(3px, -11px);
+                }
+            }
+        }
+    }
+    &__item{
+        display: block;
+        width: 4.7rem;
+        height: 0.3rem;
+        border-radius: 5px;
+        background: #000;
+        transition: all 0.3s ease-out;
+        @include bp(md){
+            width: 3.7rem;
+        }
+    }
+    &__item+&__item{
+        margin-top: 0.7rem;
+    }
+}

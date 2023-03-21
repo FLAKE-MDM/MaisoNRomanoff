@@ -1,0 +1,206 @@
+.icon{
+    background-repeat: no-repeat;
+    background-size: contain!important;
+    background-position: 0 0;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.icon-heart-inversion{
+    width: 3.4rem;
+    height: 3.3rem;
+    background-image: url(../img/icons/heart-inversion.svg);
+    @include bp(md){
+        width: 3rem;
+        height: 2.9rem;
+    }
+}
+.icon-heart{
+    width: 3.4rem;
+    height: 3.3rem;
+    background-image: url(../img/icons/heart.svg);
+    @include bp(md){
+        width: 3rem;
+        height: 2.9rem;
+    }
+}
+.icon-user{
+    width: 3.3rem;
+    height: 3.5rem;
+    background-image: url(../img/icons/user.svg);
+    @include bp(md){
+        width: 2.7rem;
+        height: 2.9rem;
+    }
+}
+.icon-user-inversion{
+    width: 3.3rem;
+    height: 3.5rem;
+    background-image: url(../img/icons/user-inversion.svg);
+    @include bp(md){
+        width: 2.7rem;
+        height: 2.9rem;
+    }
+}
+.icon-bag{
+    width: 3.5rem;
+    height: 3.4rem;
+    background-image: url(../img/icons/bag.svg);
+    @include bp(md){
+        width: 3rem;
+        height: 2.9rem;
+    }
+}
+.icon-bag-inversion{
+    width: 3.5rem;
+    height: 3.4rem;
+    background-image: url(../img/icons/bag-inversion.svg);
+    @include bp(md){
+        width: 3rem;
+        height: 2.9rem;
+    }
+}
+.icon-arrow-right-inversion{
+    width: 17.2rem;
+    height: 1.6rem;
+    background-image: url(../img/icons/arrow-right-inversion.svg);
+    @include bp(xl){
+        width: 13.2rem;
+        height: 1.25rem;
+    }
+}
+.icon-telegram{
+    width: 3.2rem;
+    height: 2.9rem;
+    background-image: url(../img/icons/telegram.svg);
+    @include bp(xl){
+        width: 2.2rem;
+        height: 1.9rem;
+    }
+    @include bp(md){
+        width: 1.6rem;
+        height: 1.5rem;
+    }
+}
+.icon-instagram{
+    width: 2.9rem;
+    height: 2.9rem;
+    background-image: url(../img/icons/instagram.svg);
+    @include bp(xl){
+        width: 1.85rem;
+        height: 1.85rem;
+    }
+    @include bp(md){
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+.icon-whatsapp{
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url(../img/icons/whatsapp.svg);
+    @include bp(xl){
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    @include bp(md){
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+}
+.icon-telegram_md{
+    width: 4.5rem;
+    height: 4rem;
+    background-image: url(../img/icons/telegram.svg);
+    @include bp(md){
+        width: 5rem;
+        height: 4.5rem;
+    }
+}
+.icon-instagram_md{
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../img/icons/instagram.svg);
+    @include bp(md){
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+.icon-whatsapp_md{
+    width: 3.9rem;
+    height: 3.9rem;
+    background-image: url(../img/icons/whatsapp.svg);
+    @include bp(md){
+        width: 4.4rem;
+        height: 4.4rem;
+    }
+}
+.icon-{
+    width: rem;
+    height: rem;
+    background-image: url(../img/icons/.svg);
+}
+.icon-{
+    width: rem;
+    height: rem;
+    background-image: url(../img/icons/.svg);
+}
+.icon-{
+    width: rem;
+    height: rem;
+    background-image: url(../img/icons/.svg);
+}
+.icon-{
+    width: rem;
+    height: rem;
+    background-image: url(../img/icons/.svg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icon-{
+    width: rem;
+    height: rem;
+    position: relative;
+    &:hover{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+    &:before, &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-out;
+    }
+    &:before{
+        background-image: url(../img/icons/.svg);
+    }
+    &:after{
+        opacity: 0;
+        background-image: url(../img/icons/.svg);
+    }
+}
+a:hover>.icon-, .active>.icon-{
+    &:before{opacity: 0;}
+    &:after{opacity: 1;}
+}
