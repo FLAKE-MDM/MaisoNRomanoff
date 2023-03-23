@@ -7,6 +7,7 @@
     <title>MaisoN Romanoff</title>
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body_home">
@@ -18,7 +19,7 @@
                 <div class="container">
                     <a href="index.html" class="logo header__logo">MaisoN<br>Romanoff</a>
                     <div class="d-flex justify-content-between">
-                        <button class="btn-menu d-xxl-none nav-toggler">
+                        <button class="btn-menu d-xl-none nav-toggler">
                             <span class="btn-menu__item"></span>
                             <span class="btn-menu__item"></span>
                             <span class="btn-menu__item"></span>
@@ -31,13 +32,13 @@
                                     <li class="info-nav__item"><a href="basket.html" class="info-nav__link icon icon-bag"></a></li>
                                 </ul>
                             </div>
-                            <ul class="nav-list d-xxl-flex">
+                            <ul class="nav-list d-xl-flex">
                                 <li class="nav-list__item"><a href="catalogue.html" class="nav-list__link active">Каталог</a></li>
                                 <li class="nav-list__item"><a href="about.html" class="nav-list__link">О нас</a></li>
                                 <li class="nav-list__item"><a href="delivery.html" class="nav-list__link">Доставка и оплата</a></li>
                                 <li class="nav-list__item"><a href="404.html" class="nav-list__link">Контакты</a></li>
                             </ul>
-                            <div class="d-xxl-none mt-auto">
+                            <div class="d-xl-none mt-auto">
                                 <div class="navbar__phone text_center order-lg-2">
                                     <a href="tel:+79854457695">+ 7(985)445-76-95</a>
                                 </div>
@@ -117,12 +118,32 @@
 
     </div>
 
-
+    <!-- cookie -->
+    <div class="modal" id="cookie" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_sm">
+            <div class="modal-content modal-content_padding-sm">
+                <div class="modal__body modal__body_padding-sm">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text_size-xl text_center no-change_lg">На этом сайте используются файлы cookie. Продолжая просмотр сайта, вы разрешаете их использование</div>
+                            <div class="btn-group row row_sm row_sm">
+                                <div class="col-lg-6"><a href="#" class="btn btn_dark btn_size-md w-100"  data-bs-dismiss="modal">согласен</a></div>
+                                <div class="col-lg-6"><a href="#" class="btn btn_size-md w-100">подробнее</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /cookie -->
+    <!-- <div class="modal-backdrop fade show"></div> -->
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

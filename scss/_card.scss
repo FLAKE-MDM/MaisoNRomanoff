@@ -1,0 +1,281 @@
+.card{
+    margin-bottom: 9.5rem;
+    @include bp(lg){
+        margin-bottom: 7.5rem;
+    }
+    @include bp(md){
+        position: relative;
+        margin-bottom: 4.2rem;
+    }
+    &-slider{
+        border: 1px solid #000;
+        height: 100%;
+        @include bp(md){
+            min-height: 36.7rem;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &__wrap{
+            position: relative;
+            height: 100%;
+            @include bp(xl-up){
+                margin: 0 1.8rem 0 0.1rem;
+            }
+            @include bp(lg){
+                margin-right: -0.5rem;
+            }
+            @include bp(md){
+                margin: 0 0 1rem;
+                height: auto;
+            }
+        }
+    }
+    &__info{
+        width: 49.6rem;
+        letter-spacing: -0.06rem;
+        max-width: 100%;
+        @include bp(lg-up){
+            margin-left: -0.5rem;
+        }
+        @include bp(lg){
+            width: auto;
+            max-width: none;
+            padding-right: 0.2rem;
+        }
+        @include bp(md){
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            padding: 0;
+        }
+    }
+    &__title{
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+        font-weight: normal;
+        margin-bottom: 4.3rem;
+        @include bp(lg){
+            font-size: 2.1rem;
+            line-height: 2.4rem;
+            margin-bottom: 2.8rem;
+        }
+        @include bp(md){
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .title_size-xl{
+            letter-spacing: 0;
+            font-size: 6.4rem;
+            line-height: 7.2rem;
+            @include bp(lg){
+                font-size: 6.7rem;
+                line-height: 6rem;
+            }
+            @include bp(md){
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+        }
+    }
+    &__price{
+        font-size: 5rem;
+        line-height: 7.05rem;
+        margin: 3.3rem 0 2.5rem;
+        @include bp(lg){
+            font-size: 4.1rem;
+            line-height: 5.8rem;
+            margin: 1.7rem 0 2.2rem;
+        }
+        .icon-money{
+            margin-left: 0.9rem;
+            @include bp(lg){
+                width: 1.4rem;
+                height: 1.7rem;
+            }
+        }
+    }
+    &__buttons{
+        margin-bottom: 0.7rem;
+        @include bp(md){
+            margin-bottom: 0.5rem;
+        }
+        .btn+.btn{
+            margin-left: 0.7rem;
+            @include bp(md){
+                margin-left: 0.5rem;
+            }
+        }
+    }
+    &__color-list{
+        @include bp(md){
+            position: absolute;
+            top: 1.4rem;
+            right: 2.8rem;
+            z-index: 3;
+        }
+    }
+}
+.thumbs-slider{
+    position: absolute;
+    top: 22.2%;
+    bottom: 22%;
+    left: 2.9rem;
+    @include bp(lg){
+        top: 26.4%;
+        bottom: 26%;
+        left: 1.8rem;
+    }
+    @include bp(md){
+        display: none;
+    }
+    .swiper-slide{
+        border: 1px solid #000;
+        width: 9.9rem;
+        height: 9.9rem!important;
+        cursor: pointer;
+        @include bp(lg){
+           width: 6.7rem;
+           height: 6.7rem!important;
+        }
+        &.swiper-slide-thumb-active{
+            img{
+                opacity: 1;
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+            transition: all 0.3s ease-out;
+        }
+    }
+}
+.zoom-link{
+    position: absolute;
+    bottom: 1.7rem;
+    right: 2.6rem;
+    @include bp(lg){
+        bottom: 2.1rem;
+        right: 1.6rem;
+    }
+    &:hover{
+        opacity: 0.5;
+    }
+}
+.characteristics{
+    &-group {
+        margin: 3.1rem 0 2.8rem;
+        @include bp(lg){
+            margin: 2.6rem 0 2rem;
+        }
+        @include bp(md){
+            margin: 1.7rem 0 2.9rem;
+        }
+    }
+    &-item {
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+        padding-right: 0.2rem;
+        margin-bottom: 2.2rem;
+        @include bp(lg){
+            font-size: 2.1rem;
+            line-height: 2.4rem;
+            margin-bottom: 1.5rem;
+        }
+        @include bp(md){
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            margin-bottom: 1.3rem;
+        }
+        &__dots {
+            background-image: linear-gradient(to right, #000 10%, rgba(255, 255, 255, 0) 0%);
+            background-position: bottom;
+            background-size: 6px 1px;
+            background-repeat: repeat-x;
+            flex-grow: 1;
+            height: 2.4rem;
+            @include bp(lg){
+                height: 1.9rem;
+            }
+            @include bp(md){
+                height: 1.7rem;
+            }
+        }
+    }
+}
+.color-list {
+    &__label {
+        margin-right: 0.7rem;
+        @include bp(md){
+            margin: 0 0 0 0.5rem;
+        }
+    }
+    &__item {
+        display: block;
+        width: 5.4rem;
+        height: 5.4rem;
+        position: relative;
+        @include bp(lg){
+            width: 4.4rem;
+            height: 4.4rem;
+        }
+        @include bp(md){
+            width: 2.3rem;
+            height: 2.3rem;
+        }
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.3s ease-out;
+            border: 4px solid #fff;
+            outline: 1px solid #000;
+            outline-offset: -1px;
+            @include bp(lg){
+                border-width: 3px;
+            }
+            @include bp(md){
+                border-width: 2px;
+            }
+        }
+    }
+    input:checked+&__item{
+        &:before{
+            opacity: 0;
+        }
+    }
+}
+.additional-slider{
+    margin: 2.2rem 0 8.9rem;
+    @include bp(lg){
+        margin: 1.7rem 0 9.8rem;
+    }
+    @include bp(md){
+        margin-bottom: 4.3rem;
+    }
+    &-nav{
+        .swiper-btn{
+            margin-left: 4rem;
+            @include bp(lg){
+                margin-left: 2.7rem;
+            }
+        }
+    }
+    .swiper-wrapper{
+        @include bp(md){
+            flex-wrap: wrap;
+            gap: 1.2rem 2rem;
+        }
+    }
+    .swiper-slide{
+        width: calc(50% - 1rem);
+    }
+}

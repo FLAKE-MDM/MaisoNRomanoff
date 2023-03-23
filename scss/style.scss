@@ -3,10 +3,11 @@
 @import 'reset';
 @import 'mixin';
 @import 'variables';
+@import 'typography';
 @import 'vendor';
 @import 'icons';
 @import 'buttons';
-@import 'typography';
+
 
 
 
@@ -93,14 +94,30 @@ body{
 .row{
     margin-left: -1.5rem;
     margin-right: -1.5rem;
-    @include bp(sm){
-
-    }
     & > *{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         @include bp(sm){
 
+        }
+    }
+    &_sm{
+        margin-left: -0.35rem;
+        margin-right: -0.35rem;
+        & > *{
+            padding-left: 0.35rem;
+            padding-right: 0.35rem;
+            @include bp(sm){
+
+            }
+        }
+    }
+    &_md{
+        margin-left: -1rem;
+        margin-right: -1rem;
+        & > *{
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
     }
 }
@@ -109,18 +126,53 @@ body{
 // swiper
 .swiper{
     &-pagination{
+        margin-bottom: 0.7rem;
         &-bullet{
-            width: 0.6rem;
-            height: 0.6rem;
-            margin: 0 0.4rem;
+            width: 0.8rem;
+            height: 0.8rem;
+            margin: 0 0.5rem!important;
             opacity: 1;
+            background: #D2D2D2;
             &:hover, &-active{
-                
+                background: #000;
             }
+        }
+    }
+    &-btn{
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+        &:hover{
+            opacity: 0.5;
+        }
+        &.swiper-button-disabled{
+            opacity: 0.24;
         }
     }
 }
 
+// breadcrumbs
+.breadcrumbs{
+    margin: 3rem 0 3.8rem;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    letter-spacing: -0.05rem;
+    @include bp(lg){
+        font-size: 2rem;
+        line-height: 2.3rem;
+        margin-top: 2rem;
+    }
+    @include bp(md){
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        margin: 0.5rem 0 1.3rem;
+    }
+    &__item+&__item{
+        &:before{
+            content: '/';
+            margin-left: 0.5rem;
+        }
+    }
+}
 
 
 
@@ -129,6 +181,9 @@ body{
 @import 'header';
 @import 'home';
 @import 'footer';
+@import 'card';
+@import 'catalogue';
+@import 'basket';
 
 
 
