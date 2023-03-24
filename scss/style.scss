@@ -97,9 +97,6 @@ body{
     & > *{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        @include bp(sm){
-
-        }
     }
     &_sm{
         margin-left: -0.35rem;
@@ -107,17 +104,22 @@ body{
         & > *{
             padding-left: 0.35rem;
             padding-right: 0.35rem;
-            @include bp(sm){
-
-            }
         }
     }
     &_md{
         margin-left: -1rem;
         margin-right: -1rem;
+        @include bp(md){
+            margin-left: -0.35rem;
+            margin-right: -0.35rem;
+        }
         & > *{
             padding-left: 1rem;
             padding-right: 1rem;
+            @include bp(md){
+                padding-left: 0.35rem;
+                padding-right: 0.35rem;
+            }
         }
     }
 }
@@ -165,6 +167,19 @@ body{
         font-size: 1.1rem;
         line-height: 1.3rem;
         margin: 0.5rem 0 1.3rem;
+    }
+    &_margin-md{
+        margin: 4.4rem 0 3.3rem;
+        @include bp(lg){
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+            margin: 0.9rem 0 1.1rem;
+        }
+        @include bp(md){
+            font-size: 1.1rem;
+            line-height: 1.3rem;
+            margin: 0.6rem 0 1.4rem;
+        }
     }
     &__item+&__item{
         &:before{

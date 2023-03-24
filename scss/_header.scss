@@ -80,7 +80,6 @@
         width: 42.3rem;
         max-width: 100%;
         z-index: 95;
-        bottom: 28.5rem;
         display: flex;
         flex-direction: column;
         bottom: 0;
@@ -95,7 +94,7 @@
     &__top{
         @include bp(lg){
             border-bottom: 0.05rem solid #000;
-            height: 7.6rem;
+            height: 8.1rem;
             flex-shrink: 0;
         }
         @include bp(md){
@@ -191,6 +190,7 @@
         }
     }
     &__link{
+        position: relative;
         &:hover{
             opacity: 0.5;
         }

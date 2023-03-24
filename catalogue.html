@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaisoN Romanoff</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="logo header__logo">MaisoN<br>Romanoff</a>
+                <div class="d-flex justify-content-between">
+                    <button class="btn-menu d-xl-none nav-toggler">
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                    </button>
+                    <nav class="navbar" id="navbar">
+                        <div class="navbar__top">
+                            <ul class="info-nav d-flex d-lg-none">
+                                <li class="info-nav__item"><a href="favorites.html" class="info-nav__link icon icon-heart"></a></li>
+                                <li class="info-nav__item"><a href="login.html" class="info-nav__link icon icon-user"></a></li>
+                                <li class="info-nav__item dropdown"><a href="basket.html" class="info-nav__link icon icon-bag" data-bs-toggle="dropdown"></a></li>
+                            </ul>
+                        </div>
+                        <ul class="nav-list d-xl-flex">
+                            <li class="nav-list__item"><a href="catalogue.html" class="nav-list__link active">Каталог</a></li>
+                            <li class="nav-list__item"><a href="about.html" class="nav-list__link">О нас</a></li>
+                            <li class="nav-list__item"><a href="delivery.html" class="nav-list__link">Доставка и оплата</a></li>
+                            <li class="nav-list__item"><a href="404.html" class="nav-list__link">Контакты</a></li>
+                        </ul>
+                        <div class="d-xl-none mt-auto">
+                            <div class="navbar__phone text_center order-lg-2">
+                                <a href="tel:+79854457695">+ 7(985)445-76-95</a>
+                            </div>
+                            <div class="social-list social-list_md d-flex justify-content-center">
+                                <a href="#" class="social-list__item icon icon-telegram_md" target="_blank"></a>
+                                <a href="#" class="social-list__item icon icon-instagram_md" target="_blank"></a>
+                                <a href="#" class="social-list__item icon icon-whatsapp_md" target="_blank"></a>
+                            </div>
+                        </div>
+                    </nav>
+                    <ul class="info-nav d-flex">
+                        <li class="info-nav__item d-none d-lg-flex"><a href="favorites.html" class="info-nav__link icon icon-heart"></a></li>
+                        <li class="info-nav__item dropdown">
+                            <a href="basket.html" class="info-nav__link icon icon-bag" data-bs-toggle="dropdown">
+                                <div class="basket-count">2</div>
+                            </a>
+                            <!-- dropdown-menu -->
+                            <div class="dropdown-menu dropdown-menu_right">
+                                <div class="dropdown-menu__body">
+                                    <div class="text_styling text_upper text_size-xl dropdown-menu__title">Корзина</div>
+                                    <!-- basket-item -->
+                                    <div class="basket-item basket-item_dropdown d-flex">
+                                        <a href="#" class="basket-item__del icon icon-close_sm"></a>
+                                        <div class="basket-item__image basket-item__image_dropdown">
+                                            <a href="#" class="toggler favorite-link basket-item__favorite-link"><span class="icon icon-heart_xs"></span></a>
+                                        <a href="card.html" class="basket-item__link scale-link"><img src="img/content/basket.jpg" alt="" class="img-fluid"></a>
+                                        </div>
+                                        <div class="basket-item__text d-flex flex-column pt-0">
+                                            <div class="basket-item__title mb-auto text_size-xxs">Раздельный купальник<div class="text_styling text_size-xl">Sereia</div></div>
+                                            <div class="d-flex justify-content-lg-between">
+                                                <div class="basket-item__info">
+                                                    <div class="basket-item__price text_styling text_size-xl">6 500<span class="icon icon-money ms-2"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /basket-item -->
+                                    <!-- basket-item -->
+                                    <div class="basket-item basket-item_dropdown d-flex">
+                                        <a href="#" class="basket-item__del icon icon-close_sm"></a>
+                                        <div class="basket-item__image basket-item__image_dropdown">
+                                            <a href="#" class="toggler favorite-link basket-item__favorite-link"><span class="icon icon-heart_xs"></span></a>
+                                        <a href="card.html" class="basket-item__link scale-link"><img src="img/content/basket-2.jpg" alt="" class="img-fluid"></a>
+                                        </div>
+                                        <div class="basket-item__text d-flex flex-column pt-0">
+                                            <div class="basket-item__title mb-auto text_size-xxs">Раздельный купальник<div class="text_styling text_size-xl">Naia</div></div>
+                                            <div class="d-flex justify-content-lg-between">
+                                                <div class="basket-item__info">
+                                                    <div class="basket-item__price text_styling text_size-xl">6 000<span class="icon icon-money ms-2"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /basket-item -->
+                                </div>
+                                <div class="dropdown-menu__footer">
+                                    <div class="dropdown-menu__body_padding">
+                                        <div class="summ-item d-flex align-items-baseline">
+                                            <div class="summ-item__title text_size-md">Товары (2)</div>
+                                            <div class="summ-item__dots"></div>
+                                            <div class="summ-item__price text_size-xl text_styling">12 500<span class="icon icon-money ms-1"></span></div>
+                                        </div>
+                                        <div class="summ-item d-flex align-items-baseline">
+                                            <div class="summ-item__title text_size-md">Итого к оплате</div>
+                                            <div class="summ-item__dots"></div>
+                                            <div class="summ-item__price text_size-xl text_styling">12 500<span class="icon icon-money ms-1"></span></div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn w-100 btn_dark">оформить заказ</a>
+                                </div>
+                            </div>
+                            <!-- /dropdown-menu -->
+                        </li>
+                        <li class="info-nav__item d-none d-lg-flex"><a href="login.html" class="info-nav__link icon icon-user"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <!-- breadcrumbs -->
+            <ul class="breadcrumbs breadcrumbs_margin-md d-flex">
+                <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">главная</a></li>
+                <li class="breadcrumbs__item">каталог</li>
+            </ul>
+            <!-- /breadcrumbs -->
+            <div class="row row_md">
+                <div class="col-xl-3">
+                    <div class="title_size-md filter__title d-inline-flex d-xl-flex align-items-center justify-content-xl-between filter-toggler">
+                        Фильтры
+                        <span class="icon icon-filter mt-2 mt-xl-1 ms-2"></span>
+                    </div>
+                    <!-- filter -->
+                    <div class="filter" id="filter">
+                        <div class="filter__header d-xl-none">
+                            <a href="#" class="icon icon-close filter__close filter-toggler"></a>
+                        </div>
+                        <div class="filter-item">
+                            <a href="#filter-1" class="filter-item__title d-flex justify-content-between align-items-center text_size-xl" data-bs-toggle="collapse">
+                                Коллекции
+                                <span class="icon icon-caret"></span>
+                            </a>
+                            <div class="collapse show" id="filter-1">
+                                <div class="filter-item__body">
+                                    <ul class="input-list">
+                                        <li class="input-list__item">
+                                            <label class="input-list__label d-flex align-items-center">
+                                                <input type="checkbox" class="form-check-input">
+                                                Sereia
+                                            </label>
+                                        </li>
+                                        <li class="input-list__item">
+                                            <label class="input-list__label d-flex align-items-center">
+                                                <input type="checkbox" class="form-check-input">
+                                                Naia
+                                            </label>
+                                        </li>
+                                        <li class="input-list__item">
+                                            <label class="input-list__label d-flex align-items-center">
+                                                <input type="checkbox" class="form-check-input">
+                                                Ava
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <a href="#filter-2" class="filter-item__title d-flex justify-content-between align-items-center collapsed text_size-xl" data-bs-toggle="collapse">
+                                Цвета
+                                <span class="icon icon-caret"></span>
+                            </a>
+                            <div class="collapse" id="filter-2">
+                                <div class="filter-item__body">
+                                    <ul class="input-list">
+                                        <li class="input-list__item">
+                                            <label class="input-list__label d-flex align-items-center">
+                                                <input type="checkbox" class="color-list__item color-list__item_sm" style="background: #3F3F2F;">
+                                                Цвет 1
+                                            </label>
+                                        </li>
+                                        <li class="input-list__item">
+                                            <label class="input-list__label d-flex align-items-center">
+                                                <input type="checkbox" class="color-list__item color-list__item_sm" style="background: #5E4E43;">
+                                                Цвет 2
+                                            </label>
+                                        </li>
+                                        <li class="input-list__item">
+                                            <label class="input-list__label d-flex align-items-center">
+                                                <input type="checkbox" class="color-list__item color-list__item_sm" style="background: #C3BABA;">
+                                                Цвет 3
+                                            </label>
+                                        </li>
+                                        <li class="input-list__item">
+                                            <label class="input-list__label d-flex align-items-center">
+                                                <input type="checkbox" class="color-list__item color-list__item_sm" style="background: #646468;">
+                                                Цвет 4
+                                            </label>
+                                        </li>
+                                        <li class="input-list__item">
+                                            <label class="input-list__label d-flex align-items-center">
+                                                <input type="checkbox" class="color-list__item color-list__item_sm" style="background: #959596;">
+                                                Цвет 5
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <a href="#filter-3" class="filter-item__title d-flex justify-content-between align-items-center collapsed text_size-xl" data-bs-toggle="collapse">
+                                Цена
+                                <span class="icon icon-caret"></span>
+                            </a>
+                            <div class="collapse" id="filter-3">
+                                <div class="filter-item__body">
+                                    <div class="d-flex justify-content-between">
+                                        <input type="text" class="range-value" id="price-value-lower">
+                                        <input type="text" class="range-value" id="price-value-upper">
+                                    </div>
+                                    <div id="price-range"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /filter -->
+                </div>
+                <main class="col-xl-9 main">
+                    <div class="row row_md">
+                        <div class="col-6 col-lg-4">
+                            <div class="catalogue-item">
+                                <div class="catalogue-item__image">
+                                    <a href="card.html" class="scale-link"><img src="img/content/photo.jpg" alt="" class="w-100 d-block"></a>
+                                    <a href="#" class="toggler favorite-link catalogue-item__favorite-link"><span class="icon icon-heart_sm"></span></a>
+                                </div>
+                                <div class="catalogue-item__body">
+                                    <a href="card.html" class="catalogue-item__title text_size-smd">
+                                        Раздельный купальник
+                                        <div class="text_styling title_size-sm">Naia</div>
+                                    </a>
+                                    <div class="catalogue-item__price">
+                                        7 500 <span class="icon icon-money_sm"></span>
+                                    </div>
+                                    <div class="catalogue-item__colors d-none d-lg-flex">
+                                        <div class="color-item_circle" style="background: #3F3F2F;"></div>
+                                        <div class="color-item_circle" style="background: #8A756C;"></div>
+                                        <div class="color-item_circle" style="background: #C3BABA;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="catalogue-item">
+                                <div class="catalogue-item__image">
+                                    <a href="card.html" class="scale-link"><img src="img/content/photo-1.jpg" alt="" class="w-100 d-block"></a>
+                                    <a href="#" class="toggler favorite-link catalogue-item__favorite-link"><span class="icon icon-heart_sm"></span></a>
+                                </div>
+                                <div class="catalogue-item__body">
+                                    <a href="card.html" class="catalogue-item__title text_size-smd">
+                                        Раздельный купальник
+                                        <div class="text_styling title_size-sm">Sereia</div>
+                                    </a>
+                                    <div class="catalogue-item__price">
+                                        6 500 <span class="icon icon-money_sm"></span>
+                                    </div>
+                                    <div class="catalogue-item__colors d-none d-lg-flex">
+                                        <div class="color-item_circle" style="background: #3F3F2F;"></div>
+                                        <div class="color-item_circle" style="background: #8A756C;"></div>
+                                        <div class="color-item_circle" style="background: #C3BABA;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="catalogue-item">
+                                <div class="catalogue-item__image">
+                                    <a href="card.html" class="scale-link"><img src="img/content/photo-10.jpg" alt="" class="w-100 d-block"></a>
+                                    <a href="#" class="toggler favorite-link catalogue-item__favorite-link"><span class="icon icon-heart_sm"></span></a>
+                                </div>
+                                <div class="catalogue-item__body">
+                                    <a href="card.html" class="catalogue-item__title text_size-smd">
+                                        Раздельный купальник
+                                        <div class="text_styling title_size-sm">Ava</div>
+                                    </a>
+                                    <div class="catalogue-item__price">
+                                        6 500 <span class="icon icon-money_sm"></span>
+                                    </div>
+                                    <div class="catalogue-item__colors d-none d-lg-flex">
+                                        <div class="color-item_circle" style="background: #3F3F2F;"></div>
+                                        <div class="color-item_circle" style="background: #8A756C;"></div>
+                                        <div class="color-item_circle" style="background: #C3BABA;"></div>
+                                        <div class="color-item_circle" style="background: #646468;"></div>
+                                        <div class="color-item_circle" style="background: #959596;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="catalogue-item">
+                                <div class="catalogue-item__image">
+                                    <a href="card.html" class="scale-link"><img src="img/content/photo-2.jpg" alt="" class="w-100 d-block"></a>
+                                    <a href="#" class="toggler favorite-link catalogue-item__favorite-link"><span class="icon icon-heart_sm"></span></a>
+                                </div>
+                                <div class="catalogue-item__body">
+                                    <a href="card.html" class="catalogue-item__title text_size-smd">
+                                        Раздельный купальник
+                                        <div class="text_styling title_size-sm">Sereia</div>
+                                    </a>
+                                    <div class="catalogue-item__price">
+                                        6 500 <span class="icon icon-money_sm"></span>
+                                    </div>
+                                    <div class="catalogue-item__colors d-none d-lg-flex">
+                                        <div class="color-item_circle" style="background: #3F3F2F;"></div>
+                                        <div class="color-item_circle" style="background: #8A756C;"></div>
+                                        <div class="color-item_circle" style="background: #C3BABA;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="catalogue-item">
+                                <div class="catalogue-item__image">
+                                    <a href="card.html" class="scale-link"><img src="img/content/photo-3.jpg" alt="" class="w-100 d-block"></a>
+                                    <a href="#" class="toggler favorite-link catalogue-item__favorite-link"><span class="icon icon-heart_sm"></span></a>
+                                </div>
+                                <div class="catalogue-item__body">
+                                    <a href="card.html" class="catalogue-item__title text_size-smd">
+                                        Раздельный купальник
+                                        <div class="text_styling title_size-sm">Ava</div>
+                                    </a>
+                                    <div class="catalogue-item__price">
+                                        6 500 <span class="icon icon-money_sm"></span>
+                                    </div>
+                                    <div class="catalogue-item__colors d-none d-lg-flex">
+                                        <div class="color-item_circle" style="background: #3F3F2F;"></div>
+                                        <div class="color-item_circle" style="background: #8A756C;"></div>
+                                        <div class="color-item_circle" style="background: #C3BABA;"></div>
+                                        <div class="color-item_circle" style="background: #646468;"></div>
+                                        <div class="color-item_circle" style="background: #959596;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="catalogue-item">
+                                <div class="catalogue-item__image">
+                                    <a href="card.html" class="scale-link"><img src="img/content/photo-4.jpg" alt="" class="w-100 d-block"></a>
+                                    <a href="#" class="toggler favorite-link catalogue-item__favorite-link"><span class="icon icon-heart_sm"></span></a>
+                                </div>
+                                <div class="catalogue-item__body">
+                                    <a href="card.html" class="catalogue-item__title text_size-smd">
+                                        Раздельный купальник
+                                        <div class="text_styling title_size-sm">Naia</div>
+                                    </a>
+                                    <div class="catalogue-item__price">
+                                        7 500 <span class="icon icon-money_sm"></span>
+                                    </div>
+                                    <div class="catalogue-item__colors d-none d-lg-flex">
+                                        <div class="color-item_circle" style="background: #3F3F2F;"></div>
+                                        <div class="color-item_circle" style="background: #8A756C;"></div>
+                                        <div class="color-item_circle" style="background: #C3BABA;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="catalogue-item">
+                                <div class="catalogue-item__image">
+                                    <a href="card.html" class="scale-link"><img src="img/content/photo-5.jpg" alt="" class="w-100 d-block"></a>
+                                    <a href="#" class="toggler favorite-link catalogue-item__favorite-link"><span class="icon icon-heart_sm"></span></a>
+                                </div>
+                                <div class="catalogue-item__body">
+                                    <a href="card.html" class="catalogue-item__title text_size-smd">
+                                        Раздельный купальник
+                                        <div class="text_styling title_size-sm">Ava</div>
+                                    </a>
+                                    <div class="catalogue-item__price">
+                                        6 500 <span class="icon icon-money_sm"></span>
+                                    </div>
+                                    <div class="catalogue-item__colors d-none d-lg-flex">
+                                        <div class="color-item_circle" style="background: #3F3F2F;"></div>
+                                        <div class="color-item_circle" style="background: #8A756C;"></div>
+                                        <div class="color-item_circle" style="background: #C3BABA;"></div>
+                                        <div class="color-item_circle" style="background: #646468;"></div>
+                                        <div class="color-item_circle" style="background: #959596;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="catalogue-item">
+                                <div class="catalogue-item__image">
+                                    <a href="card.html" class="scale-link"><img src="img/content/photo-6.jpg" alt="" class="w-100 d-block"></a>
+                                    <a href="#" class="toggler favorite-link catalogue-item__favorite-link"><span class="icon icon-heart_sm"></span></a>
+                                </div>
+                                <div class="catalogue-item__body">
+                                    <a href="card.html" class="catalogue-item__title text_size-smd">
+                                        Раздельный купальник
+                                        <div class="text_styling title_size-sm">Naia</div>
+                                    </a>
+                                    <div class="catalogue-item__price">
+                                        7 500 <span class="icon icon-money_sm"></span>
+                                    </div>
+                                    <div class="catalogue-item__colors d-none d-lg-flex">
+                                        <div class="color-item_circle" style="background: #3F3F2F;"></div>
+                                        <div class="color-item_circle" style="background: #8A756C;"></div>
+                                        <div class="color-item_circle" style="background: #C3BABA;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="catalogue-item">
+                                <div class="catalogue-item__image">
+                                    <a href="card.html" class="scale-link"><img src="img/content/photo-7.jpg" alt="" class="w-100 d-block"></a>
+                                    <a href="#" class="toggler favorite-link catalogue-item__favorite-link"><span class="icon icon-heart_sm"></span></a>
+                                </div>
+                                <div class="catalogue-item__body">
+                                    <a href="card.html" class="catalogue-item__title text_size-smd">
+                                        Раздельный купальник
+                                        <div class="text_styling title_size-sm">Sereia</div>
+                                    </a>
+                                    <div class="catalogue-item__price">
+                                        6 500 <span class="icon icon-money_sm"></span>
+                                    </div>
+                                    <div class="catalogue-item__colors d-none d-lg-flex">
+                                        <div class="color-item_circle" style="background: #3F3F2F;"></div>
+                                        <div class="color-item_circle" style="background: #8A756C;"></div>
+                                        <div class="color-item_circle" style="background: #C3BABA;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="catalogue-item">
+                                <div class="catalogue-item__image">
+                                    <a href="card.html" class="scale-link"><img src="img/content/photo-8.jpg" alt="" class="w-100 d-block"></a>
+                                    <a href="#" class="toggler favorite-link catalogue-item__favorite-link"><span class="icon icon-heart_sm"></span></a>
+                                </div>
+                                <div class="catalogue-item__body">
+                                    <a href="card.html" class="catalogue-item__title text_size-smd">
+                                        Раздельный купальник
+                                        <div class="text_styling title_size-sm">Ava</div>
+                                    </a>
+                                    <div class="catalogue-item__price">
+                                        6 500 <span class="icon icon-money_sm"></span>
+                                    </div>
+                                    <div class="catalogue-item__colors d-none d-lg-flex">
+                                        <div class="color-item_circle" style="background: #3F3F2F;"></div>
+                                        <div class="color-item_circle" style="background: #8A756C;"></div>
+                                        <div class="color-item_circle" style="background: #C3BABA;"></div>
+                                        <div class="color-item_circle" style="background: #646468;"></div>
+                                        <div class="color-item_circle" style="background: #959596;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="catalogue-item">
+                                <div class="catalogue-item__image">
+                                    <a href="card.html" class="scale-link"><img src="img/content/photo-9.jpg" alt="" class="w-100 d-block"></a>
+                                    <a href="#" class="toggler favorite-link catalogue-item__favorite-link"><span class="icon icon-heart_sm"></span></a>
+                                </div>
+                                <div class="catalogue-item__body">
+                                    <a href="card.html" class="catalogue-item__title text_size-smd">
+                                        Раздельный купальник
+                                        <div class="text_styling title_size-sm">Ava</div>
+                                    </a>
+                                    <div class="catalogue-item__price">
+                                        6 500 <span class="icon icon-money_sm"></span>
+                                    </div>
+                                    <div class="catalogue-item__colors d-none d-lg-flex">
+                                        <div class="color-item_circle" style="background: #3F3F2F;"></div>
+                                        <div class="color-item_circle" style="background: #8A756C;"></div>
+                                        <div class="color-item_circle" style="background: #C3BABA;"></div>
+                                        <div class="color-item_circle" style="background: #646468;"></div>
+                                        <div class="color-item_circle" style="background: #959596;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="d-lg-flex">
+                    <div class="footer__logo text_center">
+                        <a href="index.html" class="logo">MaisoN<br>Romanoff</a>
+                    </div>
+                    <div class="footer__content">
+                        <div class="row footer__row justify-content-center justify-content-lg-start">
+                            <div class="col-md-4 col-6 footer__col">
+                                <div class="footer-title text_upper text_styling">Контакты</div>
+                                <p class="text_size-xs pt-2 pt-lg-0">E-mail</p>
+                                <p class="text_size-md mb-xxl-4 mb-2"><a href="mailto:romanoffyuliaofficial@yandex.ru">romanoffyuliaofficial<wbr>@yandex.ru</a></p>
+                                <p class="text_size-xs pt-1 pb-1 pb-lg-2 pb-xxl-1">Телефон</p>
+                                <p class="text_size-md mb-xxl-4 mb-2 pb-lg-1 pb-xxl-0"><a href="tel:+79854457695">+ 7(985)445-76-95</a></p>
+                                <p class="text_size-xs">Соц. сети</p>
+                                <div class="social-list">
+                                    <a href="#" class="social-list__item icon icon-telegram" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-instagram" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-whatsapp" target="_blank"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 col-xxl-4 footer__col">
+                                <div class="footer-title text_upper text_styling">Меню</div>
+                                <ul class="footer-nav text_size-md">
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Каталог</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка и оплата</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Обмен и возврат</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">О нас</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom text_size-md">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-end align-items-lg-start">
+                        <div class="footer__links d-lg-flex d-xxl-block">
+                            <p><a href="#" class="link_underline">оферта</a></p>
+                            <p><a href="#" class="link_underline">политика конфиденциальности</a></p>
+                        </div>
+                        <div class="footer__design">site design : <a href="#">Ada Ismagilova</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

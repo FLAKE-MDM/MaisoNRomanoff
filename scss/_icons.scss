@@ -45,17 +45,22 @@
         height: 2.4rem;
         background-image: url(../img/icons/heart.svg);
         @include bp(lg){
-            width: 1.7rem;
-            height: 1.6rem;
+            width: 2.2rem;
+            height: 2.1rem;
         }
         @include bp(md){
             width: 1.3rem;
             height: 1.3rem;
         }
     }
+    &_xs{
+        width: 1.5rem;
+        height: 1.5rem;
+        background-image: url(../img/icons/heart.svg);
+    }
 }
 .favorite-link.active{
-    .icon-heart_sm{
+    .icon-heart_sm, .icon-heart_xs{
         background-image: url(../img/icons/heart-fill.svg);
     }
 }
@@ -187,6 +192,19 @@
         width: 1.1rem;
         height: 1.3rem;
     }
+    &_sm{
+        width: 1.2rem;
+        height: 1.5rem;
+        background-image: url(../img/icons/money.svg);
+        @include bp(lg){
+            width: 1.1rem;
+            height: 1.3rem;
+        }
+        @include bp(md){
+            width: 0.6rem;
+            height: 0.7rem;
+        }
+    }
 }
 .icon-prev{
     width: 9.7rem;
@@ -213,17 +231,30 @@
     @include bp(md){
         width: 1.6rem;
         height: 1.6rem;
-      }
+    }
+    &_sm{
+        width: 2.3rem;
+        height: 2.3rem;
+        background-image: url(../img/icons/close.svg);
+    }
 }
-.icon-{
-    width: rem;
-    height: rem;
-    background-image: url(../img/icons/.svg);
+.icon-filter{
+    width: 2.6rem;
+    height: 2.5rem;
+    background-image: url(../img/icons/filter.svg);
+    @include bp(lg){
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+    @include bp(md){
+        width: 1.4rem;
+        height: 1.4rem;
+    }
 }
-.icon-{
-    width: rem;
-    height: rem;
-    background-image: url(../img/icons/.svg);
+.icon-caret{
+    width: 2.6rem;
+    height: 1.3rem;
+    background-image: url(../img/icons/caret.svg);
 }
 .icon-{
     width: rem;

@@ -1,9 +1,13 @@
 .catalogue{
     &-item{
+        margin-bottom: 3rem;
+        @include bp(md){
+            margin-bottom: 1.2rem;
+        }
         &__image{
             position: relative;
-            margin-bottom: 1.5rem;
-            max-height: 62.4rem;
+            margin-bottom: 1.1rem;
+            max-height: 46.4rem;
             overflow: hidden;
             @include bp(lg){
                 max-height: 41.4rem;
@@ -11,35 +15,48 @@
             }
             @include bp(xs){
                 max-height: 20.6rem;
-                margin-bottom: 0.5rem;
+                margin-bottom: 0.4rem;
             }
         }
         &__favorite-link{
             position: absolute;
-            top: 1.9rem;
-            right: 2.8rem;
+            top: 1.4rem;
+            right: 1.6rem;
             @include bp(lg){
-                top: 1.3rem;
-                right: 1.5rem;
+                top: 1.2rem;
+                right: 1.3rem;
             }
             @include bp(md){
                 top: 0.5rem;
                 right: 0.6rem;
+                width: 3.1rem;
+                height: 3.1rem;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #fff;
+                filter: drop-shadow(-1px 1px 4px rgba(0, 0, 0, 0.25));
             }
         }
         &__title{
             letter-spacing: -0.05rem;
             display: block;
-            margin-bottom: 1.2rem;
+            margin-bottom: 0.8rem;
             @include bp(lg){
                 letter-spacing: 0;
-                margin-bottom: 0.4rem;
+                margin-bottom: 0.6rem;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
             }
             @include bp(md){
                 font-size: 1rem;
                 line-height: 1.2rem;
                 margin-bottom: 0.1rem;
                 letter-spacing: -0.02rem;
+            }
+            .title_size-sm{
+                letter-spacing: 0;
             }
             .title_size-lg{
                 padding: 0 0.2rem;
@@ -55,24 +72,21 @@
             padding: 0 0.02rem;
         }
         &__price{
-            padding: 0 0.2rem;
-            letter-spacing: -0.1rem;
+            font-size: 2.2rem;
+            line-height: 2.7rem;
+            padding: 0;
+            letter-spacing: -0.05rem;
             @include bp(lg){
                 font-size: 2rem;
-                line-height: 2.4rem;
+                line-height: 2.3rem;
             }
             @include bp(md){
                 font-size: 1rem;
                 line-height: 1.2rem;
-                padding: 0;
-                letter-spacing: -0.04rem;
             }
-            .icon-money{
-                @include bp(md){
-                    width: 0.6rem;
-                    height: 0.7rem;
-                }
-            }
+        }
+        &__colors{
+            margin-top: 0.8rem;
         }
     }
 }
@@ -88,15 +102,92 @@
         transition: all 0.5s ease-out;
     }
 }
-.favorite-link{
-    @include bp(md){
-        width: 3.1rem;
-        height: 3.1rem;
-        border-radius: 50px;
+
+// filter
+.filter{
+    @include bp(lg){
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: #fff;
+        transition: all 0.3s ease-out;
+        transform: translateX(-100%);
+        width: 42.3rem;
+        max-width: 100%;
+        z-index: 97;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        padding-bottom: 3rem;
+        &.show{
+            transform: none;
+        }
+        @include bp(md){
+            width: 100%;
+        }
+    }
+    &__title{
+        letter-spacing: -0.02rem;
+        margin-bottom: 3.4rem;
+        @include bp(lg){
+            margin-bottom: 0.9rem;
+        }
+        @include bp(md){
+            margin-bottom: 0.3rem;
+        }
+    }
+    &__header{
+        min-height: 8rem;
+        padding: 2rem 3rem;
         display: flex;
         align-items: center;
-        justify-content: center;
-        background: #fff;
-        filter: drop-shadow(-1px 1px 4px rgba(0, 0, 0, 0.25));
+    }
+    &__close{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+.filter-item {
+    border-top: 1px solid #000;
+    @include bp(lg){
+        padding: 0 3rem;
+    }
+    @include bp(md){
+        padding: 0 2rem;
+    }
+    &__title {
+        padding: 1.2rem 0 1.2rem 0.1rem;
+        letter-spacing: -0.05rem;
+        &.collapsed{
+            .icon-caret{
+                transform: none;
+            }
+        }
+        .icon-caret{
+            margin-top: 0.9rem;
+            transition: all 0.3s ease-out;
+            transform: rotate(180deg);
+        }
+    }
+    &__body {
+        padding: 1rem 0.1rem 0.3rem;
+    }
+}
+.input-list {
+    &__item {
+        margin-bottom: 1rem;
+    }
+    &__label {
+    }
+}
+.main{
+    padding-top: 0.4rem;
+    padding-bottom: 2.4rem;
+    @include bp(lg){
+        margin-bottom: 9rem;
+    }
+    @include bp(md){
+        margin-bottom: 3.7rem;
     }
 }
