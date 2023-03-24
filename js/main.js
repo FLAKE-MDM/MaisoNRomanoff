@@ -67,7 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // catalogue
 var priceSlider = document.getElementById('price-range');
 
-noUiSlider.create(priceSlider, {
+if(priceSlider){
+  noUiSlider.create(priceSlider, {
     start: ['0', '10000'],
     connect: true,
     range: {
@@ -90,17 +91,48 @@ formatValues.forEach((input, handle) => {
     priceSlider.noUiSlider.setHandle(handle, this.value);
   });
 })
+}
+
 
 $(".basket-item__del").click(function(e){
   e.preventDefault();
   $(this).closest(".basket-item").remove()
 })
 
-$(".filter-toggler").click(function(e){
-  e.preventDefault();
-  $('#filter').toggleClass('show');
-  $('body').toggleClass('overflow-none');
+document.addEventListener('DOMContentLoaded', () => {
+  const width = window.innerWidth
+  if (width < 1200){
+    $(".filter-toggler").click(function(e){
+      e.preventDefault();
+      $('#filter').toggleClass('show');
+      $('body').toggleClass('overflow-none');
+    })
+  }
 })
+
+
+// basket
+// // input number
+jQuery(($) => {
+  $(document).on('click', '.input-number__minus', function () {
+      let total = $(this).next();
+      if (total.val() > 1) {
+          total.val(+total.val() - 1);
+      } else{
+        $(this).parents().find('.btn-add').removeClass('collapse');
+        $(this).parents('.fake-btn').addClass('collapse');
+      }
+  });
+  $(document).on('click', '.input-number__plus', function () {
+      let total = $(this).prev();
+      total.val(+total.val() + 1);
+  });
+  document.querySelectorAll('.input-number__input').forEach(function (el) {
+      el.addEventListener('input', function () {
+          this.value = this.value.replace(/[^\d]/g, '');
+      });
+  });
+});
 
 // // home
 // new Swiper(".preview-slider", {
@@ -208,7 +240,7 @@ $(".filter-toggler").click(function(e){
 //       codeGroupInputs[i+1].focus()
 //     }
 //   })
-  
+
 // }
 
 // $(".pass-view").click(function(e){
@@ -255,14 +287,14 @@ $(".filter-toggler").click(function(e){
 //           slidesPerView: 4,
 //         },
 //         992: {
-//           slidesPerView: 5,    
-//           spaceBetween: 16,    
+//           slidesPerView: 5,
+//           spaceBetween: 16,
 //           direction: "vertical",
 //         },
 //         1200: {
-//           slidesPerView: 6,   
-//           spaceBetween: 16,    
-//           direction: "vertical", 
+//           slidesPerView: 6,
+//           spaceBetween: 16,
+//           direction: "vertical",
 //         },
 //       },
 //     },
@@ -295,27 +327,7 @@ $(".filter-toggler").click(function(e){
 //   $(this).addClass('active');
 // })
 
-// // // input number 
-// jQuery(($) => {
-//   $(document).on('click', '.input-number__minus', function () {
-//       let total = $(this).next();
-//       if (total.val() > 1) {
-//           total.val(+total.val() - 1);
-//       } else{
-//         $(this).parents().find('.btn-add').removeClass('collapse');
-//         $(this).parents('.fake-btn').addClass('collapse');
-//       }
-//   });
-//   $(document).on('click', '.input-number__plus', function () {
-//       let total = $(this).prev();
-//       total.val(+total.val() + 1);
-//   });
-//   document.querySelectorAll('.input-number__input').forEach(function (el) {
-//       el.addEventListener('input', function () {
-//           this.value = this.value.replace(/[^\d]/g, '');
-//       });
-//   });
-// });
+
 
 // // certificates
 // new Swiper(".certificates-slider", {
@@ -330,8 +342,8 @@ $(".filter-toggler").click(function(e){
 //   spaceBetween: 24,
 //   freeMode: true,
 //   breakpoints: {
-//     992: {   
-//       spaceBetween: 47,    
+//     992: {
+//       spaceBetween: 47,
 //     },
 //   },
 // });

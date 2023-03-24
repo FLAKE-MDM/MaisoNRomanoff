@@ -236,6 +236,14 @@
         width: 2.3rem;
         height: 2.3rem;
         background-image: url(../img/icons/close.svg);
+        @include bp(lg){
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+        @include bp(md){
+            width: 0.95rem;
+            height: 0.95rem;
+        }
     }
 }
 .icon-filter{

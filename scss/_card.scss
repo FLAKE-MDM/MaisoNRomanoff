@@ -328,6 +328,9 @@
         }
         .catalogue-item__title{
             margin-bottom: 1.2rem;
+            @include bp(md){
+                margin-bottom: 0.1rem;
+            }
         }
         .catalogue-item__price{
             padding: 0 0.2rem;
@@ -355,6 +358,10 @@
             @include bp(lg){
                 top: 1.3rem;
                 right: 1.5rem;
+            }
+            @include bp(md){
+                top: 0.5rem;
+                right: 0.7rem;
             }
         }
         .icon-heart{
