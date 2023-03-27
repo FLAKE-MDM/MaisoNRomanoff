@@ -114,39 +114,7 @@ input:hover::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* @include transform-translate(#, #); */
-/* @include transform-translateY(#); */
-/* @include transform-translateX(#); */
-/* @include transform-translate3d(#, #, #); */
-/* @include transform-rotate(#); */
-/* @include transform-scale(#); */
-/* @include animation(#); */
-/* @include animation-delay(#); */
-/* @include animation-duration(#); */
-/* @include animation-fill-mode(#); */
-/* @include animation-name(#); */
-/* @include transition(#); */
-/* @include transition-transform(#, #); */
-/* @include transition-transform-cubic-bezier(#, #, #, #, #); */
-/* @include transition-timing-function(#); */
-/* @include transition-duration(#); */
-/* @include transition-delay(#); */
-/* @include backface-visibility(#); */
-/* @include transition-opacity-visibility(#, #); */
-/* @include transition-opacity(#); */
-/* @include box-shadow(#); */
-/* @include opacity(#); */
-/* @include border-radius(#); */
-/* @include border_b_l-radius(#); */
-/* @include border_b_r-radius(#); */
-/* @include border_t_r-radius(#); */
-/* @include border_t_l-radius(#); */
 /* @include box-sizing(#); */
-/* @include user-select(#); */
-/* @include filter-blur-brightness(#, #); */
-/* @include filter-img(#, #); */
-/* @include filter(#); */
-/* @include box-sizing(#, #(0)); */
 a {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
