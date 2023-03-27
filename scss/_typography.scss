@@ -14,6 +14,41 @@ a{
         border-color: transparent;
     }
 }
+.mb{
+    &_md{
+        margin-bottom: 5.5rem;
+        @include bp(lg){
+            margin-bottom: 3.4rem;
+        }
+        @include bp(md){
+            margin-bottom: 4.1rem;
+        }
+    }
+    &_lg{
+        margin-bottom: 7.9rem;
+        @include bp(lg){
+            margin-bottom: 6.5rem;
+        }
+    }
+    &_xl{
+        margin-bottom: 11.9rem;
+        @include bp(lg){
+            margin-bottom: 9.6rem;
+        }
+        @include bp(md){
+            margin-bottom: 5.8rem;
+        }
+    }
+    &_xxl{
+        margin-bottom: 29.2rem;
+        @include bp(lg){
+            margin-bottom: 13rem;
+        }
+        @include bp(md){
+            margin-bottom: 4.8rem;
+        }
+    }
+}
 .title{
     padding-bottom: 4.8rem;
     text-transform: uppercase;
@@ -39,10 +74,39 @@ a{
         right: -1000%;
         border-bottom: 1px solid rgba(0, 0, 0, 0.31);
     }
+    &_before{
+        padding-top: 4.7rem;
+        @include bp(lg){
+            padding-top: 4.1rem;
+            padding-bottom: 4.2rem;
+        }
+        @include bp(md){
+            padding-top: 2.4rem;
+            padding-bottom: 1.9rem;
+            margin-bottom: 1.5rem;
+        }
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -1000%;
+            right: -1000%;
+            border-top: 1px solid rgba(0, 0, 0, 0.31);
+        }
+    }
     &_size{
         &-xs{
             font-size: 3.5rem;
             line-height: 4.9rem;
+            @include bp(lg){
+                font-size: 2.3rem;
+                line-height: 3.3rem;
+            }
+            @include bp(md){
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+            }
         }
         &-sm{
             font-size: 3.7rem;
@@ -141,6 +205,14 @@ a{
         &-lg{
             font-size: 2.8rem;
             line-height: 3.3rem;
+            @include bp(lg){
+                font-size: 1.8rem;
+                line-height: 2.1rem;
+            }
+            @include bp(md){
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+            }
         }
         &-xl{
             font-size: 3rem;

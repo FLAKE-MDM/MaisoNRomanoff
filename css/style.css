@@ -136,6 +136,64 @@ a:hover {
   border-color: transparent;
 }
 
+.mb_md {
+  margin-bottom: 5.5rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .mb_md {
+    margin-bottom: 3.4rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mb_md {
+    margin-bottom: 4.1rem;
+  }
+}
+
+.mb_lg {
+  margin-bottom: 7.9rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .mb_lg {
+    margin-bottom: 6.5rem;
+  }
+}
+
+.mb_xl {
+  margin-bottom: 11.9rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .mb_xl {
+    margin-bottom: 9.6rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mb_xl {
+    margin-bottom: 5.8rem;
+  }
+}
+
+.mb_xxl {
+  margin-bottom: 29.2rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .mb_xxl {
+    margin-bottom: 13rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mb_xxl {
+    margin-bottom: 4.8rem;
+  }
+}
+
 .title {
   padding-bottom: 4.8rem;
   text-transform: uppercase;
@@ -170,9 +228,52 @@ a:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.31);
 }
 
+.title_before {
+  padding-top: 4.7rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .title_before {
+    padding-top: 4.1rem;
+    padding-bottom: 4.2rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .title_before {
+    padding-top: 2.4rem;
+    padding-bottom: 1.9rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.title_before:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -1000%;
+  right: -1000%;
+  border-top: 1px solid rgba(0, 0, 0, 0.31);
+}
+
 .title_size-xs {
   font-size: 3.5rem;
   line-height: 4.9rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .title_size-xs {
+    font-size: 2.3rem;
+    line-height: 3.3rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .title_size-xs {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
 }
 
 .title_size-sm {
@@ -306,6 +407,20 @@ a:hover {
 .text_size-lg {
   font-size: 2.8rem;
   line-height: 3.3rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .text_size-lg {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .text_size-lg {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
 }
 
 .text_size-xl {
@@ -3997,4 +4112,101 @@ input:checked + .color-list__item:before, .color-list__item:checked:before {
     line-height: 1.8rem;
     padding: 0.2rem 0;
   }
+}
+
+.delivery-info {
+  font-size: 2rem;
+  padding: 4.4rem 0 4.9rem;
+  letter-spacing: -0.05rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .delivery-info {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    padding: 2.4rem 0 4.4rem;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .delivery-info {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding: 0.6rem 0 3.1rem;
+  }
+}
+
+.text-block p {
+  letter-spacing: -0.07rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .text-block p {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .text-block p {
+    margin-bottom: 1rem;
+    letter-spacing: -0.03rem;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .text-block {
+    font-size: 1.85rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .text-block {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .text-block .title_size-xs {
+    margin-bottom: 1.4rem;
+  }
+}
+
+.letter-minus {
+  letter-spacing: -0.065rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .letter-minus {
+    letter-spacing: -0.03rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .collapse-desktop {
+    display: block !important;
+    height: auto !important;
+  }
+}
+
+.title-link:hover {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 992px) {
+  .title-link {
+    cursor: default;
+  }
+}
+
+.title-link.collapsed .icon-caret {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.title-link .icon-caret {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
