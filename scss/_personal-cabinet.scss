@@ -151,3 +151,172 @@
         margin-left: 0;
     }
 }
+
+// personal-info
+.personal{
+    &-nav{
+        border: none;
+        padding: 2.7rem 0 3.2rem;
+        @include bp(lg-up){
+            position: relative;
+            box-shadow: none;
+            margin: 0!important;
+            background: none;
+        }
+        @include bp(lg){
+            padding: 1.7rem 0 1.9rem;
+        }
+        @include bp(md){
+            inset: 100% 0 auto auto!important;
+            transform: none!important;
+            margin: -1.6rem 0 0!important;
+            min-width: 100%;
+            padding: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.31);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+        }
+        &:before{
+            display: none;
+        }
+        &__dropdown{
+            @include bp(md){
+                padding-bottom: 1.5rem;
+            }
+            &>.personal-nav__link{
+                border: none;
+            }
+            &:after{
+                content: '';
+                display: block;
+                position: absolute;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.31);
+                bottom: 0;
+                left: -1000%;
+                right: -1000%;
+            }
+            @include bp(md){
+                margin: 2.3rem -2rem 0;
+            }
+        }
+        &__item{
+            @include bp(lg-up){
+                &:not(:last-child){
+                    margin-right: 5rem;
+                }
+            }
+            @include bp(xl-up){
+                &:not(:last-child){
+                    margin-right: 7.6rem;
+                }
+            }
+        }
+        &__link{
+            color: #AAAAAA;
+            text-transform: uppercase;
+            font-size: 3rem;
+            line-height: 4.2rem;
+            @include bp(lg){
+                font-size: 2rem;
+                line-height: 2.8rem;
+            }
+            @include bp(md){
+                padding: 1.6rem 2rem;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.31);
+                display: block;
+                text-align: center;
+            }
+            &.active, &:hover{
+                color: #000;
+            }
+            &.active:hover{opacity: 1;}
+            .icon-caret{
+                width: 3.7rem;
+                height: 1.8rem;
+                margin-left: 1.5rem;
+                transition: all 0.3s ease-out;
+                transform: rotate( 180deg);
+            }
+            &.show .icon-caret{
+                transform: none;
+            }
+        }
+    }
+    &-info{
+        width: 77.2rem;
+        margin: 2.6rem auto 12.5rem;
+        border: 1px solid #000;
+        padding: 6.1rem 7.3rem 3.3rem;
+        @include bp(lg){
+            width: 49.7rem;
+            margin-top: 5.1rem;
+            padding: 3.8rem 4.6rem 2.3rem;
+        }
+        @include bp(md){
+            width: 100%;
+            padding: 2.7rem 1rem 1.8rem;
+            margin: 1.9rem 0 5.9rem;
+        }
+    }
+}
+
+
+// favorite-row
+.favorite-row{
+    margin-top: 2.7rem;
+    margin-bottom: 19rem;
+    @include bp(lg){
+        margin: 3.5rem -0.6rem 7.1rem;
+    }
+    @include bp(md){
+        margin: 3rem -1rem 11.4rem;
+    }
+    &>*{
+        @include bp(lg){
+            padding-left: 0.6rem;
+            padding-right: 0.6rem;
+        }
+        @include bp(md){
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+    .catalogue-item__favorite-link{
+        @include bp(lg){
+            top: 0.9rem;
+            right: 1.3rem;
+        }
+        @include bp(md){
+            top: 0.7rem;
+            right: 0.6rem;
+        }
+    }
+    .catalogue-item__title{
+        @media (min-width: 992px) and (max-width: 1199px){
+            font-size: 1.25rem;
+            line-height: 1.45rem;
+        }
+        .title_size-sm{
+            @media (min-width: 992px) and (max-width: 1199px){
+                font-size: 2.5rem;
+                line-height: 2rem;
+            }
+        }
+    }
+    .catalogue-item__image{
+        @media (min-width: 992px) and (max-width: 1199px){
+            margin-bottom: 0.8rem;
+        }
+    }
+    .catalogue-item__price{
+        @media (min-width: 992px) and (max-width: 1199px){
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+    }
+    .icon-money_sm{
+        @media (min-width: 992px) and (max-width: 1199px){
+            width: 0.8rem;
+            height: 1rem;
+        }
+    }
+}

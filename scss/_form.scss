@@ -27,6 +27,15 @@
                     margin-bottom: 1.1rem;
                 }
             }
+            &-lg{
+                margin-bottom: 3.2rem;
+                @include bp(lg){
+                    margin-bottom: 1.75rem;
+                }
+                @include bp(md){
+                    margin-bottom: 1.21rem;
+                }
+            }
         }
     }
     &-control{
@@ -100,6 +109,34 @@
                     border-radius: 4px;
                     letter-spacing: -0.05rem;
                     padding: 1.05rem 1.7rem;
+                }
+            }
+            &-xl{
+                border: none;
+                border-bottom: 1px solid #000;
+                font-size: 4rem;
+                line-height: 4.7rem;
+                padding: 0.4rem 0;
+                &::-webkit-input-placeholder{color: rgba(0,0,0,0.2)!important}
+                &::-moz-placeholder{color: rgba(0,0,0,0.2)!important}
+                &:-moz-placeholder{color: rgba(0,0,0,0.2)!important}
+                &:-ms-input-placeholder{color: rgba(0,0,0,0.2)!important}
+                @include bp(lg){
+                    font-size: 2.6rem;
+                    line-height: 3rem;
+                }
+                @include bp(md){
+                    font-size: 2.1rem;
+                    line-height: 2.5rem;
+                }
+                &.text_size-xl{
+                    font-size: 3rem;
+                    @include bp(lg){
+                        font-size: 1.9rem;
+                    }
+                    @include bp(md){
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }
