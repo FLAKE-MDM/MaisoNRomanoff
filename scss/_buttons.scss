@@ -28,8 +28,9 @@
     &:disabled, &.disabled{
         cursor: default;
         pointer-events: none;
-        background: gray + 30;
-        color: gray;
+        background: #868686;
+        border-color: #868686;
+        color: #fff;
     }
     &_transparent{
         border: 1px solid #FFFFFF;

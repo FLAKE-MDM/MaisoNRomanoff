@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaisoN Romanoff</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="logo header__logo">MaisoN<br>Romanoff</a>
+                <div class="d-flex justify-content-between">
+                    <button class="btn-menu d-xl-none nav-toggler">
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                        <span class="btn-menu__item"></span>
+                    </button>
+                    <nav class="navbar" id="navbar">
+                        <div class="navbar__top">
+                            <ul class="info-nav d-flex d-lg-none">
+                                <li class="info-nav__item"><a href="favorites.html" class="info-nav__link icon icon-heart"></a></li>
+                                <li class="info-nav__item"><a href="login.html" class="info-nav__link icon icon-user"></a></li>
+                                <li class="info-nav__item"><a href="basket.html" class="info-nav__link icon icon-bag"></a></li>
+                            </ul>
+                        </div>
+                        <ul class="nav-list d-xl-flex">
+                            <li class="nav-list__item"><a href="catalogue.html" class="nav-list__link active">Каталог</a></li>
+                            <li class="nav-list__item"><a href="about.html" class="nav-list__link">О нас</a></li>
+                            <li class="nav-list__item"><a href="delivery.html" class="nav-list__link">Доставка и оплата</a></li>
+                            <li class="nav-list__item"><a href="404.html" class="nav-list__link">Контакты</a></li>
+                        </ul>
+                        <div class="d-xl-none mt-auto">
+                            <div class="navbar__phone text_center order-lg-2">
+                                <a href="tel:+79854457695">+ 7(985)445-76-95</a>
+                            </div>
+                            <div class="social-list social-list_md d-flex justify-content-center">
+                                <a href="#" class="social-list__item icon icon-telegram_md" target="_blank"></a>
+                                <a href="#" class="social-list__item icon icon-instagram_md" target="_blank"></a>
+                                <a href="#" class="social-list__item icon icon-whatsapp_md" target="_blank"></a>
+                            </div>
+                        </div>
+                    </nav>
+                    <ul class="info-nav d-flex">
+                        <li class="info-nav__item d-none d-lg-flex"><a href="favorites.html" class="info-nav__link icon icon-heart"></a></li>
+                        <li class="info-nav__item"><a href="basket.html" class="info-nav__link icon icon-bag"></a></li>
+                        <li class="info-nav__item d-none d-lg-flex"><a href="login.html" class="info-nav__link icon icon-user"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <a href="#" class="back-link d-none d-lg-inline-flex text_size-md align-items-center"><span class="icon arrow icon-prev"></span>вернуться к покупкам</a>
+            <div class="title">регистрация</div>
+            <form action="#">
+                <div class="d-flex align-items-center flex-column form-block pt-2 registration-form">
+                    <div class="col-lg-7 px-lg-5 px-lg-1 col-12">
+                        <div class="form-block__group_bordered">
+                            <div class="form-group_margin-sm">
+                                <label for="name" class="label text_size-md">Ваше имя<span class="required">*</span></label>
+                                <input type="text" class="form-control form-control_size-md" id="name" placeholder="Анастасия">
+                            </div>
+                            <div class="form-group_margin-sm">
+                                <label for="surname" class="label text_size-md">Фамилия<span class="required">*</span></label>
+                                <input type="text" class="form-control form-control_size-md" id="surname" placeholder="Иванова">
+                            </div>
+                            <div class="form-group_margin-sm">
+                                <label for="phone" class="label text_size-md">Контактный телефон<span class="required">*</span></label>
+                                <input type="text" class="form-control form-control_size-md" id="phone" placeholder="+7(814)354-91-83">
+                            </div>
+                            <div class="form-group_margin-sm">
+                                <label for="email" class="label text_size-md">E-mail<span class="required">*</span></label>
+                                <input type="text" class="form-control form-control_size-md" id="email" placeholder="n@mail.ru">
+                            </div>
+                            <div class="form-group_margin-sm pt-3 pt-lg-2 pt-xl-3">
+                                <label class="d-flex align-content-center check-label">
+                                    <input type="checkbox" class="form-check-input form-check-input_transparent form-check-input_md me-lg-3 me-2" checked="">
+                                    <div class="pt-xl-1 ps-xl-1">подписаться на новости магазина</div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-block__group">
+                            <div class="form-group_margin-sm">
+                                <label for="pass" class="label text_size-md">Пароль <span class="required">*</span></label>
+                                <input type="password" class="form-control form-control_size-md" id="pass" placeholder="">
+                            </div>
+                            <div class="form-group_margin-sm">
+                                <label for="pass-confirm" class="label text_size-md">Повторите пароль<span class="required">*</span></label>
+                                <input type="password" class="form-control form-control_size-md" id="pass-confirm" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <div class="d-flex align-items-center check-label pt-3 pt-lg-1">
+                                    <input type="checkbox" class="form-check-input form-check-input_transparent form-check-input_md me-xl-3 me-2" checked="">
+                                    <div class="d-block">
+                                        согласие на обработку персональных данных
+                                        <div class="text_light text_size-xs">я ознакомлен/на и согласен с условиями оферты и <a href="#" class="link_underline text_light">политики конфиденциальности</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 form-block__btn-group">
+                        <button class="btn w-100 btn_dark">зарегистрироваться</button>
+                        <a href="#" class="btn w-100">войти</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="d-lg-flex">
+                    <div class="footer__logo text_center">
+                        <a href="index.html" class="logo">MaisoN<br>Romanoff</a>
+                    </div>
+                    <div class="footer__content">
+                        <div class="row footer__row justify-content-center justify-content-lg-start">
+                            <div class="col-md-4 col-6 footer__col">
+                                <div class="footer-title text_upper text_styling">Контакты</div>
+                                <p class="text_size-xs pt-2 pt-lg-0">E-mail</p>
+                                <p class="text_size-md mb-xxl-4 mb-2"><a href="mailto:romanoffyuliaofficial@yandex.ru">romanoffyuliaofficial<wbr>@yandex.ru</a></p>
+                                <p class="text_size-xs pt-1 pb-1 pb-lg-2 pb-xxl-1">Телефон</p>
+                                <p class="text_size-md mb-xxl-4 mb-2 pb-lg-1 pb-xxl-0"><a href="tel:+79854457695">+ 7(985)445-76-95</a></p>
+                                <p class="text_size-xs">Соц. сети</p>
+                                <div class="social-list">
+                                    <a href="#" class="social-list__item icon icon-telegram" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-instagram" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-whatsapp" target="_blank"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 col-xxl-4 footer__col">
+                                <div class="footer-title text_upper text_styling">Меню</div>
+                                <ul class="footer-nav text_size-md">
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Каталог</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка и оплата</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Обмен и возврат</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">О нас</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom text_size-md">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-end align-items-lg-start">
+                        <div class="footer__links d-lg-flex d-xxl-block">
+                            <p><a href="#" class="link_underline">оферта</a></p>
+                            <p><a href="#" class="link_underline">политика конфиденциальности</a></p>
+                        </div>
+                        <div class="footer__design">site design : <a href="#">Ada Ismagilova</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+
+    <!-- add-card -->
+    <div class="modal fade" id="success" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog_lg">
+            <div class="modal-content modal-content_padding-md">
+                <div class="modal__body modal__body_padding-md">
+                    <button type="button" class="icon modal__close modal__close_md icon-close_md" data-bs-dismiss="modal"></button>
+                    <div class="text_center text_upper text_styling title_size-xl modal__title modal__title_margin-md">Ваш заказ <span class="d-none d-lg-block">успешно</span> оформлен</div>
+                    <div class="d-flex flex-column align-items-center text_center">
+                        <div class="col-9 mb_lg text_size-lg">После обработки заказа Вы получите трек-номер на электронную почту для отслеживания отправления. Отследить заказ вы сможете на сайте СДЕК.</div>
+                        <div class="col-10 col-lg-9 px-1 px-lg-2 px-xl-4">
+                            <a href="#" class="btn btn_darken w-100 btn_size-mlg" data-bs-dismiss="modal">продолжить покупки</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /add-card -->
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

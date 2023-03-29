@@ -9,6 +9,15 @@
             margin-bottom: 0.5rem;
         }
         &_margin{
+            &-sm{
+                margin-bottom: 1.3rem;
+                @include bp(lg){
+                    margin-bottom: 1.2rem;
+                }
+                @include bp(md){
+                    margin-bottom: 0.7rem;
+                }
+            }
             &-md{
                 margin-bottom: 2.6rem;
                 @include bp(lg){
@@ -55,7 +64,17 @@
         }
         &_size{
             &-md{
-                
+                &::-webkit-input-placeholder{color:rgba(0,0,0,0.2)!important}
+                &::-moz-placeholder{color:rgba(0,0,0,0.2)!important}
+                &:-moz-placeholder{color:rgba(0,0,0,0.2)!important}
+                &:-ms-input-placeholder{color:rgba(0,0,0,0.2)!important}
+                padding: 1.7rem 2.3rem;
+                @include bp(lg){
+                    padding-top: 1.6rem;
+                }
+                @include bp(md){
+                    padding: 0.9rem 1.3rem;
+                }
             }
             &-lg{
                 font-size: 3rem;
@@ -183,6 +202,26 @@
         }
     }
 }
+.label{
+    display: inline-flex;
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.05rem;
+    .has-error &{
+        color: $danger;
+    }
+    @include bp(lg){
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+    @include bp(md){
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        letter-spacing: -0.02rem;
+        margin-bottom: 0.4rem;
+    }
+}
+
+
 // range
 .range{
     &-value{

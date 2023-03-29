@@ -1,0 +1,153 @@
+.form-block{
+    margin: 2.8rem 0 13.1rem;
+    @include bp(lg){
+        margin-top: 4.1rem;
+    }
+    @include bp(md){
+        margin: 3.1rem 0 15.5rem;
+    }
+    &.registration-form{
+        margin-bottom: 6.7rem;
+        @include bp(lg){
+            margin-top: 3rem;
+        }
+        @include bp(md){
+            margin: 2rem 0 5.1rem;
+        }
+        .form-group_margin-sm{
+            margin-bottom: 1.4rem;
+            @include bp(lg){
+                margin-bottom: 0.75rem;
+            }
+            @include bp(md){
+                margin-bottom: 0.85rem;
+            }
+        }
+        .label{
+            @include bp(lg){
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                margin-bottom: 0.3rem;
+            }
+        }
+        .required{
+            @include bp(lg){
+                font-size: 2.4rem;
+            }
+        }
+        .form-control_size-md{
+            @include bp(lg){
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+                padding: 1rem 1.3rem;
+            }
+            @include bp(md){
+                padding-top: 0.9rem;
+            }
+        }
+        .form-check-input_md{
+            @include bp(lg){
+                width: 1.7rem;
+                height: 1.7rem;
+                &:before{
+                    width: 1.1rem;
+                    height: 1.1rem;
+                    margin-left: 0.1rem;
+                }
+            }
+        }
+        .check-label{
+            @include bp(lg){
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+            }
+        }
+        .form-block__btn-group{
+            @include bp(lg){
+                width: 35.9rem;
+            }
+            @include bp(md){
+                width: 20.5rem;
+                padding-top: 1rem;
+            }
+            .btn{
+                @include bp(lg){
+                    font-size: 2.4rem;
+                    line-height: 2.8rem;
+                    padding: 0.3rem 2rem 0.6rem;
+                    margin-bottom: 0.6rem;
+                    letter-spacing: 0;
+                }
+                @include bp(md){
+                    font-size: 1.4rem;
+                    line-height: 1.6rem;
+                    padding: 0.3rem 1.35rem 0.5rem;
+                    margin-bottom: 0.4rem;
+                }
+            }
+        }
+    }
+    &__group{
+        margin-bottom: 6.2rem;
+        @include bp(lg){
+            margin-bottom: 2.9rem;
+        }
+        @include bp(md){
+            margin-bottom: 1.6rem;
+        }
+        &_bordered{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.31);
+            padding-bottom: 0.3rem;
+            margin-bottom: 2rem;
+            @include bp(lg){
+                margin-bottom: 1.2rem;
+            }
+            @include bp(md){
+                padding-bottom: 0.8rem;
+            }
+        }
+    }
+    &__btn-group{
+        width: 59.2rem;
+        @include bp(lg){
+            width: 49.6rem;
+            padding-top: 0.8rem;
+        }
+        @include bp(md){
+            width: 20.5rem;
+            padding-top: 1rem;
+        }
+        .btn{
+            font-size: 4rem;
+            padding: 0.9rem 2rem 1.6rem;
+            margin-bottom: 0.9rem;
+            @include bp(lg){
+                font-size: 3.35rem;
+                padding: 0.7rem 2rem 1.3rem;
+                margin-bottom: 0.8rem;
+            }
+            @include bp(md){
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                padding: 0.3rem 1.35rem 0.5rem;
+                margin-bottom: 0.4rem;
+            }
+        }
+    }
+}
+.forgot-pass{
+    letter-spacing: -0.05rem;
+    @include bp(md){
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+}
+.required{
+    font-size: 4rem;
+    color: #FF0000;
+    margin-left: 0.5rem;
+    @include bp(md){
+        font-size: 1.7rem;
+        margin-left: 0;
+    }
+}

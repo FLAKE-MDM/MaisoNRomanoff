@@ -5,6 +5,12 @@ a{
     &:hover{
         opacity: 0.5;
     }
+    &.text_light{
+        &:hover{
+            opacity: 1;
+            color: #000;
+        }
+    }
 }
 .link_underline{
     display: inline-block;
@@ -98,6 +104,12 @@ a{
             left: -1000%;
             right: -1000%;
             border-top: 1px solid rgba(0, 0, 0, 0.31);
+        }
+    }
+    &_clear{
+        padding: 1.1rem 0;
+        &:after{
+            display: none;
         }
     }
     &_size{
@@ -232,6 +244,9 @@ a{
     // colors
     &_danger{
         color: $danger;
+    }
+    &_light{
+        color: rgba(0, 0, 0, 0.47);
     }
     // weight
     &_normal{
