@@ -1,20 +1,48 @@
 .form{
     &-group{
-
+        margin-bottom: 0.8rem;
+        position: relative;
+        @include bp(lg){
+            margin-bottom: 0.7rem;
+        }
+        @include bp(md){
+            margin-bottom: 0.5rem;
+        }
+        &_margin{
+            &-md{
+                margin-bottom: 2.6rem;
+                @include bp(lg){
+                    margin-bottom: 2.1rem;
+                }
+                @include bp(md){
+                    margin-bottom: 1.1rem;
+                }
+            }
+        }
     }
     &-control{
         font-family: inherit;
         display: block;
-        border: 1px solid #CBCBCB;
-        border-radius: 5px;
-        padding: 1.3rem 1.9rem;
+        border: 1px solid #000;
+        border-radius: 0;
+        padding: 1.4rem 1.9rem;
         width: 100%;
-        font-size: 1.4rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: 2.3rem;
         font-weight: 400;
         background: transparent;
         transition: all 0.3s ease-out;
-        &.has-error{
+        @include bp(lg){
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            padding: 1.2rem 1.7rem;
+        }
+        @include bp(md){
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+            padding: 0.9rem 1.3rem;
+        }
+        .has-error &{
             border-color: $danger;
             &::-webkit-input-placeholder{color:$danger!important}
             &::-moz-placeholder{color:$danger!important}
@@ -25,7 +53,36 @@
             background: #E8E8E8;
             border-color: #E8E8E8;
         }
-        &:focus{
+        &_size{
+            &-md{
+                
+            }
+            &-lg{
+                font-size: 3rem;
+                line-height: 3.5rem;
+                padding: 2.7rem 4.3rem 2.7rem;
+                letter-spacing: -0.1rem;
+                border-radius: 10px;
+                &::-webkit-input-placeholder{color: #000!important}
+                &::-moz-placeholder{color: #000!important}
+                &:-moz-placeholder{color: #000!important}
+                &:-ms-input-placeholder{color: #000!important}
+                @include bp(lg){
+                    font-size: 2.4rem;
+                    line-height: 2.8rem;
+                    border-radius: 8px;
+                    letter-spacing: -0.07rem;
+                    padding: 2.15rem 3.5rem;
+                }
+                @include bp(md){
+                    font-size: 1.3rem;
+                    line-height: 1.5rem;
+                    padding: 0.9rem 1.3rem;
+                    border-radius: 4px;
+                    letter-spacing: -0.05rem;
+                    padding: 1.05rem 1.7rem;
+                }
+            }
         }
     }
     &-check-input{
@@ -59,6 +116,33 @@
             background-size: contain;
             transition: all 0.3s ease-out;
             opacity: 0;
+        }
+        &_transparent{
+            &:checked{
+                border-color: #000;
+                background: none;
+                &:before{
+                    background-image: url(../img/icons/checkbox.svg);
+                }
+            }
+        }
+        &_md{
+            width: 2.8rem;
+            height: 2.8rem;
+            @include bp(md){
+                width: 1.55rem;
+                height: 1.55rem;
+            }
+            &:before{
+                margin-left: 0.3rem;
+                width: 1.8rem;
+                height: 1.8rem;
+                @include bp(md){
+                    width: 1rem;
+                    height: 1rem;
+                    margin-left: 0.1rem;
+                }
+            }
         }
         &_lg{
             border-radius: 0;

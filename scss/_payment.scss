@@ -1,0 +1,172 @@
+.payment{
+    &-block {
+        width: 83rem;
+        max-width: 100%;
+        margin: 4.7rem auto 10.3rem;
+        @include bp(lg){
+            width: 67rem;
+            margin: 6rem auto 10.7rem;
+        }
+        @include bp(md){
+            margin: 4.7rem 0 7.5rem;
+        }
+    }
+    &-form {
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 30px;
+        margin-bottom: 2.7rem;
+        padding: 6.8rem 6.4rem 4.4rem;
+        @include bp(lg){
+            padding: 5.5rem 5.1rem 3.6rem;
+            border-radius: 24px;
+        }
+        @include bp(md){
+            border-radius: 12px;
+            padding: 2.8rem 2.6rem 1.8rem;
+            margin-bottom: 1rem;
+        }
+    }
+    &-list {
+        margin-bottom: 5.6rem;
+        @include bp(lg){
+            width: 57.9%;
+            margin: 0 0 4.5rem auto;
+        }
+        @include bp(md){
+            margin-bottom: 2.4rem;
+        }
+        &__item {
+            margin-left: 2.7rem;
+            @include bp(lg){
+                margin-left: 2.3rem;
+            }
+            @include bp(md){
+                margin-left: 1.2rem;
+            }
+        }
+    }
+    &-canсel{
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        margin-top: 0.8rem;
+        display: inline-block;
+        @include bp(lg){
+          letter-spacing: -0.05rem;
+          margin-top: 1.2rem;
+        }
+        @include bp(md){
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            letter-spacing: -0.02rem;
+            margin-top: 1.4rem;
+        }
+    }
+}
+.form-info {
+    position: absolute;
+    width: 2.3rem;
+    height: 2.3rem;
+    right: 4.4rem;
+    padding-top: 0.3rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #787878;
+    border-radius: 50%;
+    @include bp(lg){
+        width: 1.9rem;
+        height: 1.9rem;
+        right: 3.6rem;
+    }
+    @include bp(md){
+        width: 1rem;
+        height: 1rem;
+        padding: 0;
+        right: 1.9rem;
+    }
+}
+.tool-tip {
+    position: absolute;
+    display: none;
+    width: 27.3rem;
+    padding: 2.3rem 3.2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    bottom: 100%;
+    left: 0;
+    margin: 0 0 2.8rem 0.8rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 10px 0px;
+    letter-spacing: -0.03rem;
+    @include bp(lg){
+        width: 20.3rem;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        padding: 1.7rem 2.5rem;
+        border-radius: 7px 7px 7px 0px;
+    }
+    &:after{
+        content: '';
+        display: block;
+        background: url(../img/tool-tip-after.png) 0 0 no-repeat;
+        background-size: contain;
+        width: 2.4rem;
+        height: 2.4rem;
+        position: absolute;
+        left: 0;
+        top: 100%;
+    }
+	&__title {
+		letter-spacing: -0.13rem;
+        @include bp(lg){
+            font-size: 1.85rem;
+            line-height: 2.3rem;
+        }
+    }
+    @include bp(lg-up){
+        *:hover>&{
+            display: block;
+        }
+    }
+    &_mobile{
+        position: relative;
+        margin-top: 4.6rem;
+        padding-left: 2.7rem;
+        max-width: 19rem;
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        .form-info{
+            right: auto;
+            top: -0.1rem;
+            left: 0.2rem;
+            bottom: auto;
+            width: 1.7rem;
+            height: 1.7rem;
+            padding-top: 0.1rem;
+        }
+        .icon-ask{
+            width: 0.8rem;
+            height: 1.3rem;
+        }
+        .tool-tip__title{
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+    }
+}
+.check-label{
+    @include bp(lg){
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+    @include bp(md){
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+}

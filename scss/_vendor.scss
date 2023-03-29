@@ -44,6 +44,18 @@
       top: 1rem;
       right: 1.1rem;
     }
+    &_md{
+      top: 2.9rem;
+      right: 3.5rem;
+      @include bp(lg){
+        top: 1.9rem;
+        right: 2.3rem;
+      }
+      @include bp(md){
+        top: 0.9rem;
+        right: 0.9rem;
+      }
+    }
   }
   &__body{
     border: 1px solid #000;
@@ -66,6 +78,35 @@
         }
       }
     }
+    &_padding-md{
+      padding: 11.8rem 2rem 10.5rem;
+      letter-spacing: -0.07rem;
+      @include bp(lg){
+        padding: 7.8rem 2rem 7.1rem;
+        letter-spacing: -0.05rem;
+      }
+      @include bp(md){
+        padding: 4rem 2rem 3.9rem;
+      }
+      .text_size-lg{
+        @include bp(lg){
+          font-size: 1.9rem;
+          line-height: 2.2rem;
+        }
+        @include bp(md){
+          font-size: 1rem;
+          line-height: 1.2rem;
+        }
+      }
+      .mb_lg{
+        @include bp(lg){
+          margin-bottom: 5.5rem;
+        }
+        @include bp(md){
+          margin-bottom: 4.2rem;
+        }
+      }
+    }
   }
   &__title{
     margin-bottom: 6rem;
@@ -73,6 +114,12 @@
       font-size: 2.2rem;
       line-height: 3rem;
       margin-bottom: 2rem;
+    }
+    &_margin-md{
+      margin-bottom: 4.1rem;
+      @include bp(lg){
+          margin-bottom: 2.7rem;
+      }
     }
   }
   &__basket-item{
@@ -109,8 +156,15 @@
     }
   }
   &_lg{
+    @include bp(lg-up){
+      width: 67rem;
+    }
     @include bp(xl-up){
       width: 98.5rem;
+    }
+    @include bp(md){
+      width: 30.7rem;
+      margin: 3rem auto;
     }
   }
 }
@@ -148,8 +202,11 @@
   &_padding{
     &-md{
       padding: 2.6rem 3rem 2.7rem;
+      @include bp(lg){
+        padding: 1.8rem 2.1rem;
+      }
       @include bp(md){
-        
+        padding: 1rem;
       }
     }
     &-sm{

@@ -74,6 +74,11 @@ a{
         right: -1000%;
         border-bottom: 1px solid rgba(0, 0, 0, 0.31);
     }
+    &_padding{
+        @include bp(xl-up){
+            padding-top: 3.9rem;
+        }
+    }
     &_before{
         padding-top: 4.7rem;
         @include bp(lg){
@@ -145,8 +150,9 @@ a{
         &-xl{
             font-size: 6rem;
             line-height: 8.4rem;
-            @include bp(md){
-                
+            @include bp(lg){
+                font-size: 4.1rem;
+                line-height: 5.8rem;
             }
         }
     }
@@ -224,12 +230,6 @@ a{
         }
     }
     // colors
-    &_success{
-        color: $success;
-    }
-    &_warning{
-        color: $warning;
-    }
     &_danger{
         color: $danger;
     }

@@ -205,6 +205,19 @@
             height: 0.7rem;
         }
     }
+    &-inversion{
+        width: 1.7rem;
+        height: 2rem;
+        background-image: url(../img/icons/money-inversion.svg);
+        @include bp(lg){
+            width: 1.4rem;
+            height: 1.6rem;
+        }
+        @include bp(md){
+            width: 0.7rem;
+            height: 0.9rem;
+        }
+    }
 }
 .icon-prev{
     width: 9.7rem;
@@ -245,6 +258,19 @@
             height: 0.95rem;
         }
     }
+    &_md{
+        width: 3.5rem;
+        height: 3.5rem;
+        background-image: url(../img/icons/close.svg);
+        @include bp(lg){
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+        @include bp(md){
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
 }
 .icon-filter{
     width: 2.6rem;
@@ -264,10 +290,18 @@
     height: 1.3rem;
     background-image: url(../img/icons/caret.svg);
 }
-.icon-{
-    width: rem;
-    height: rem;
-    background-image: url(../img/icons/.svg);
+.icon-ask{
+    width: 1rem;
+    height: 1.7rem;
+    background-image: url(../img/icons/ask.svg);
+    @include bp(lg){
+       width: 0.8rem;
+       height: 1.4rem;
+    }
+    @include bp(md){
+        width: 0.5rem;
+        height: 0.7rem;
+    }
 }
 .icon-{
     width: rem;

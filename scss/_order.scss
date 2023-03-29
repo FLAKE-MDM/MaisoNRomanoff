@@ -1,0 +1,256 @@
+.order{
+    &-section{
+        margin-top: 7.2rem;
+        margin-bottom: 5rem;
+        @include bp(lg){
+            margin-top: 5.4rem;
+        }
+        @include bp(md){
+            margin-top: 1.7rem;
+        }
+    }
+    &-info{
+        border: 1px solid #000;
+        padding: 3rem 2.7rem;
+        @include bp(xxl-up){
+            padding-right: 4.1rem;
+        }
+        @include bp(lg){
+            padding: 0;
+            border: none;
+            max-width: 28rem;
+            margin-left: auto;
+        }
+        @include bp(md){
+            width: auto;
+            max-width: none;
+            margin: 0 -2rem 4rem;
+        }
+        &__title{
+            margin-bottom: 3.6rem;
+            letter-spacing: 0;
+            @include bp(xl-up){
+                &:hover{
+                    opacity: 1;
+                    cursor: default;
+                }
+            }
+            @include bp(lg){
+                font-size: 2.6rem;
+                line-height: 3rem;
+                margin-bottom: 8.5rem;
+                &.collapsed{
+                    opacity: 1;
+                    .icon-caret{
+                        transform: rotate(180deg);
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+            @include bp(md){
+                font-size: 2.3rem;
+                display: flex!important;
+                justify-content: center;
+                margin: 0 auto 3.7rem;
+            }
+            .icon-caret{
+                transition: all 0.3s ease-out;
+            }
+        }
+        &__collapse{
+            @include bp(xl-up){
+                height: auto!important;
+                display: block!important;
+            }
+            @include bp(md){
+                padding: 0 2rem;
+                margin-bottom: 0.4rem;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.31);
+            }
+        }
+        &__price{
+            margin-top: 4.5rem;
+            @include bp(lg){
+                margin-top: 3.7rem;
+            }
+            @include bp(md){
+                margin-top: 0;
+            }
+            .summ-item{
+                @include bp(lg){
+                    margin-bottom: 0.9rem;
+                }
+                @include bp(md){
+                    margin-bottom: 0.7rem;
+                }
+            }
+            .summ-item__title{
+                letter-spacing: -0.06rem;
+                @include bp(lg){
+                    font-size: 1.95rem;
+                    line-height: 2.3rem;
+                }
+                @include bp(md){
+                    letter-spacing: -0.04rem;
+                }
+            }
+            .summ-item__price{
+                letter-spacing: -0.06rem;
+                @include bp(lg){
+                    font-size: 1.3rem;
+                    line-height: 1.5rem;
+                }
+                .icon-money_sm{
+                    @include bp(md){
+                        width: 1rem;
+                        height: 1rem;
+                        letter-spacing: -0.03rem;
+                    }
+                }
+            }
+        }
+        &__total{
+            padding: 2.6rem 0 1rem;
+            margin: 2.4rem 0 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.31);
+            @include bp(lg){
+                margin-top: 1.6rem;
+                font-size: 1.95rem;
+                padding: 1.5rem 0 0;
+            }
+            @include bp(md){
+                margin-top: 1rem;
+                padding: 0.3rem 0 2.4rem;
+            }
+            .summ-item__title{
+                letter-spacing: 0;
+                @include bp(lg){
+                    font-size: 1.95rem;
+                }
+            }
+            .summ-item__price{
+                @include bp(md){
+                    font-size: 1.95rem;
+                    line-height: 2.9rem;
+                }
+                .icon-money{
+                    @include bp(md){
+                        width: 1.35rem;
+                        height: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+    &-form{
+        margin-bottom: 12.7rem;
+        @include bp(lg){
+            margin-bottom: 3.1rem;
+        }
+        @include bp(xl-up){
+            margin-right: -0.2rem;
+            padding-left: 0.2rem;
+        }
+        &__heading{
+            border-bottom: 2px solid #000000;
+            padding-bottom: 1.4rem;
+            padding: 0.1rem 0 1.1rem;
+            margin-bottom: 4.3rem;
+            letter-spacing: -0.11rem;
+            @include bp(lg){
+                padding: 0 0 1rem;
+                margin: -0.2rem 0 3.8rem;
+                letter-spacing: -0.02rem;
+            }
+            @include bp(md){
+                letter-spacing: -0.075rem;
+                padding-bottom: 0.5rem;
+                margin-bottom: 2rem;
+            }
+            .text_size-xl{
+                @include bp(md){
+                    font-size: 2rem;
+                }
+            }
+            .text_styling{
+                letter-spacing: 0;
+                margin-top: 0.2rem;
+                @include bp(lg){
+                    font-size: 2.7rem;
+                }
+                @include bp(md){
+                    font-size: 2rem;
+                    margin-top: 0.1rem;
+                }
+            }
+        }
+        &__group{
+            margin-bottom: 3rem;
+            @include bp(md){
+                margin-bottom: 1.2rem;
+            }
+            &_bordered-mobile{
+                @include bp(md){
+                    padding-bottom: 0.9rem;
+                    border-bottom: 1px solid #000;
+                }
+            }
+        }
+        &__title{
+            margin-bottom: 2rem;
+            letter-spacing: -0.03rem;
+            @include bp(lg){
+                font-size: 1.6rem;
+                margin-bottom: 1.6rem;
+            }
+            @include bp(md){
+                font-size: 1.2rem;
+                line-height: 1.4rem;
+                margin-bottom: 1.2rem;
+            }
+        }
+        &__tabs{
+            padding-bottom: 3rem;
+            border-bottom: 1px solid #000;
+            @include bp(lg){
+                padding-bottom: 2.6rem;
+                margin-bottom: -0.4rem;
+            }
+            @include bp(md){
+                padding-bottom: 1.7rem;
+                margin: 0;
+            }
+        }
+        &__after-text{
+            @include bp(lg){
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+            }
+            @include bp(md){
+                font-size: 1.1rem;
+                line-height: 1.3rem;
+                letter-spacing: -0.025rem;
+            }
+        }
+        .row_md{
+            @include bp(md){
+                margin-left: -0.15rem;
+                margin-right: -0.15rem;
+            }
+            & > *{
+                @include bp(md){
+                    padding-left: 0.15rem;
+                    padding-right: 0.15rem;
+                }
+            }
+        }
+    }
+}
+.star{
+    font-size: 2rem;
+    margin: 0.3rem 1.1rem -0.9rem 0;
+    align-self: center;
+    @include bp(md){
+        margin-right: 0.5rem;
+    }
+}
