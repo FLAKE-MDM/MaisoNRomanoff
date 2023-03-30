@@ -21,6 +21,9 @@ a{
     }
 }
 .mb{
+    &_sm{
+        margin-bottom: 3.3rem;
+    }
     &_md{
         margin-bottom: 5.5rem;
         @include bp(lg){
