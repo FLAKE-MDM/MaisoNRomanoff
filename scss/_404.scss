@@ -1,0 +1,78 @@
+.error-section{
+    min-height: 100vh;
+    background: url(../img/error.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-size: 3.5rem;
+    line-height: 4.1rem;
+    padding-bottom: 5.8%;
+    display: flex;
+    align-items: center;
+    @include bp(lg){
+        font-size: 2.3rem;
+        line-height: 2.7rem;
+    }
+    @include bp(md){
+        font-size: 1.7rem;
+        line-height: 2rem;
+        padding-bottom: 20.8%;
+        background-image: url(../img/error-mobile.jpg);
+    }
+    P{
+        margin-bottom: 6.8rem;
+        @include bp(lg){
+            margin-bottom: 4.5rem;
+            letter-spacing: -0.03rem;
+        }
+        @include bp(md){
+            margin-bottom: 3.6rem;
+        }
+    }
+    &__num{
+        font-size: 34.4rem;
+        line-height: 1;
+        @include bp(lg){
+            font-size: 23rem;
+        }
+        @include bp(md){
+            font-size: 17.5rem;
+        }
+    }
+    &__title{
+        font-size: 7.7rem;
+        line-height: 10.8rem;
+        margin: 2.4rem 0 2rem;
+        @include bp(lg){
+            font-size: 5.1rem;
+            line-height: 7.2rem;
+            margin: 1.8rem 0 1.3rem;
+        }
+        @include bp(md){
+            font-size: 3.7rem;
+            line-height: 5.2rem;
+            margin: 0.2rem 0 1.5rem;
+        }
+    }
+    &__content{
+        padding: 0 5.3%;
+        @include bp(lg){
+            padding: 0 6.9%;
+        }
+        @include bp(md){
+            text-align: center;
+            padding: 0;
+        }
+    }
+    &__btn{
+        width: 62.9rem;
+        @include bp(lg){
+            width: 41.9rem;
+        }
+        @include bp(md){
+            width: 100%;
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            padding-bottom: 1.2rem;
+        }
+    }
+}

@@ -189,7 +189,20 @@ body{
     }
 }
 
-
+.content{
+    padding: 6rem 0 12.3rem;
+    letter-spacing: -0.04rem;
+    line-height: 2.284rem;
+    @include bp(lg){
+        padding: 3rem 0 12.6rem;
+        line-height: 1.896rem;
+    }
+    @include bp(md){
+        padding: 1.6rem 0 7.9rem;
+        line-height: 1.385rem;
+        letter-spacing: -0.02rem;
+    }
+}
 
 
 @import 'form';
@@ -205,6 +218,7 @@ body{
 @import 'personal-cabinet';
 @import 'recomendation';
 @import 'about';
+@import '404';
 
 
 
