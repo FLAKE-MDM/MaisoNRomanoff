@@ -1,0 +1,43 @@
+.recomendation{
+    &-row{
+        margin: 6.1rem 0 4.4rem;
+        justify-content: space-around;
+        @include bp(xl-up){
+            padding: 0 8.3% 0 7%;
+        }
+        @include bp(lg){
+            margin: 4rem 0 5rem;
+            justify-content: space-between;
+        }
+        @include bp(md){
+            margin: 3.5rem 0 4.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+    &-item{
+        margin-bottom: 5rem;
+        width: 28%;
+        @include bp(lg){
+            font-size: 2rem;
+            line-height: 2.3rem;
+            width: 27.5%;
+        }
+        @include bp(md){
+            width: 77%;
+            margin-bottom: 6.2rem;
+        }
+        &__image{
+            margin: 0 auto 2.8rem;
+            @include bp(lg){
+                margin-bottom: 2.7rem;
+            }
+        }
+        &__title{
+            margin-bottom: 3.1rem;
+            @include bp(lg){
+                margin-bottom: 2.3rem;
+            }
+        }
+    }
+}

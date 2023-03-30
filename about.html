@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaisoN Romanoff</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- preview-about -->
+        <div class="preview-about">
+            <!-- header -->
+            <header class="header header_inversion">
+                <div class="container">
+                    <a href="index.html" class="logo header__logo">MaisoN<br>Romanoff</a>
+                    <div class="d-flex justify-content-between">
+                        <button class="btn-menu d-xl-none nav-toggler">
+                            <span class="btn-menu__item"></span>
+                            <span class="btn-menu__item"></span>
+                            <span class="btn-menu__item"></span>
+                        </button>
+                        <nav class="navbar" id="navbar">
+                            <div class="navbar__top">
+                                <ul class="info-nav d-flex d-lg-none">
+                                    <li class="info-nav__item"><a href="favorites.html" class="info-nav__link icon icon-heart"></a></li>
+                                    <li class="info-nav__item"><a href="login.html" class="info-nav__link icon icon-user"></a></li>
+                                    <li class="info-nav__item"><a href="basket.html" class="info-nav__link icon icon-bag"></a></li>
+                                </ul>
+                            </div>
+                            <ul class="nav-list d-xl-flex">
+                                <li class="nav-list__item"><a href="catalogue.html" class="nav-list__link">Каталог</a></li>
+                                <li class="nav-list__item"><a href="about.html" class="nav-list__link active">О нас</a></li>
+                                <li class="nav-list__item"><a href="delivery.html" class="nav-list__link">Доставка и оплата</a></li>
+                                <li class="nav-list__item"><a href="404.html" class="nav-list__link">Контакты</a></li>
+                            </ul>
+                            <div class="d-xl-none mt-auto">
+                                <div class="navbar__phone text_center order-lg-2">
+                                    <a href="tel:+79854457695">+ 7(985)445-76-95</a>
+                                </div>
+                                <div class="social-list social-list_md d-flex justify-content-center">
+                                    <a href="#" class="social-list__item icon icon-telegram_md" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-instagram_md" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-whatsapp_md" target="_blank"></a>
+                                </div>
+                            </div>
+                        </nav>
+                        <ul class="info-nav d-flex">
+                            <li class="info-nav__item d-none d-lg-flex"><a href="favorites.html" class="info-nav__link icon icon-heart-inversion"></a></li>
+                            <li class="info-nav__item dropdown">
+                                <a href="#" class="info-nav__link icon icon-bag-inversion" data-bs-toggle="dropdown">
+                                    <div class="basket-count">2</div>
+                                </a>
+                                <!-- dropdown-menu -->
+                                <div class="dropdown-menu dropdown-menu_right">
+                                    <div class="dropdown-menu__body">
+                                        <div class="text_styling text_upper text_size-xl dropdown-menu__title">Корзина</div>
+                                        <!-- basket-item -->
+                                        <div class="basket-item basket-item_dropdown d-flex">
+                                            <a href="#" class="basket-item__del icon icon-close_sm"></a>
+                                            <div class="basket-item__image basket-item__image_dropdown">
+                                                <a href="#" class="toggler favorite-link basket-item__favorite-link_dropdown"><span class="icon icon-heart_xs"></span></a>
+                                                <a href="card.html" class="basket-item__link scale-link"><img src="img/content/basket.jpg" alt="" class="img-fluid"></a>
+                                            </div>
+                                            <div class="basket-item__text d-flex flex-column pt-0">
+                                                <a href="card.html" class="basket-item__title mb-auto text_size-xxs">Раздельный купальник<div class="text_styling text_size-xl">Sereia</div></a>
+                                                <div class="d-flex justify-content-lg-between">
+                                                    <div class="basket-item__info">
+                                                        <div class="basket-item__price text_styling text_size-xl">6 500<span class="icon icon-money ms-2"></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /basket-item -->
+                                        <!-- basket-item -->
+                                        <div class="basket-item basket-item_dropdown d-flex">
+                                            <a href="#" class="basket-item__del icon icon-close_sm"></a>
+                                            <div class="basket-item__image basket-item__image_dropdown">
+                                                <a href="#" class="toggler favorite-link basket-item__favorite-link_dropdown"><span class="icon icon-heart_xs"></span></a>
+                                            <a href="card.html" class="basket-item__link scale-link"><img src="img/content/basket-2.jpg" alt="" class="img-fluid"></a>
+                                            </div>
+                                            <div class="basket-item__text d-flex flex-column pt-0">
+                                                <a href="card.html"  class="basket-item__title mb-auto text_size-xxs">Раздельный купальник<div class="text_styling text_size-xl">Naia</div></a>
+                                                <div class="d-flex justify-content-lg-between">
+                                                    <div class="basket-item__info">
+                                                        <div class="basket-item__price text_styling text_size-xl">6 000<span class="icon icon-money ms-2"></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /basket-item -->
+                                    </div>
+                                    <div class="dropdown-menu__footer">
+                                        <div class="dropdown-menu__body_padding">
+                                            <div class="summ-item d-flex align-items-baseline">
+                                                <div class="summ-item__title text_size-md">Товары (2)</div>
+                                                <div class="summ-item__dots"></div>
+                                                <div class="summ-item__price text_size-xl text_styling">12 500<span class="icon icon-money ms-1"></span></div>
+                                            </div>
+                                            <div class="summ-item d-flex align-items-baseline">
+                                                <div class="summ-item__title text_size-md">Итого к оплате</div>
+                                                <div class="summ-item__dots"></div>
+                                                <div class="summ-item__price text_size-xl text_styling">12 500<span class="icon icon-money ms-1"></span></div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn w-100 btn_dark">оформить заказ</a>
+                                    </div>
+                                </div>
+                                <!-- /dropdown-menu -->
+                            </li>
+                            <li class="info-nav__item d-none d-lg-flex"><a href="login.html" class="info-nav__link icon icon-user-inversion"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- /header -->
+            <div class="container">
+                <div class="preview-about__text text_size-xl">
+                    <div class="preview-about__title text_styling">О нас</div>
+                    <p>Maison Romanoff - бренд женской пляжной одежды, создающий оригинальные модели купальников, удобные в носке и эффектные при посадке на фигуру. Наши изделия являются классикой в современном прочтении, они не только выгодно подчеркнут Вашу природную красоту, но и внесут в Ваш отпуск чувство комфорта и изысканности.</p>
+                    <p>Изделия прослужат не один год, так как ткань очень эластична и устойчива к хлору, УФ-лучам, соли. Бренд использует высококачественные ткани, изготовленные из пряжи ECONYL ® - 100 % регенерированного нейлонового волокна.</p>
+                    <p>Мы тщательно подходим к разработке одежды, выбору тканей, вопросам экологичности, разумного потребления и клиентоориентированности. Будем рады услышать от Вас обратную связь и увидеть классные фотографии с отдыха!</p>
+                </div>
+            </div>
+        </div>
+         <!-- preview-about -->
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="d-lg-flex">
+                    <div class="footer__logo text_center">
+                        <a href="index.html" class="logo">MaisoN<br>Romanoff</a>
+                    </div>
+                    <div class="footer__content">
+                        <div class="row footer__row justify-content-center justify-content-lg-start">
+                            <div class="col-md-4 col-6 footer__col">
+                                <div class="footer-title text_upper text_styling">Контакты</div>
+                                <p class="text_size-xs pt-2 pt-lg-0">E-mail</p>
+                                <p class="text_size-md mb-xxl-4 mb-2"><a href="mailto:romanoffyuliaofficial@yandex.ru">romanoffyuliaofficial<wbr>@yandex.ru</a></p>
+                                <p class="text_size-xs pt-1 pb-1 pb-lg-2 pb-xxl-1">Телефон</p>
+                                <p class="text_size-md mb-xxl-4 mb-2 pb-lg-1 pb-xxl-0"><a href="tel:+79854457695">+ 7(985)445-76-95</a></p>
+                                <p class="text_size-xs">Соц. сети</p>
+                                <div class="social-list">
+                                    <a href="#" class="social-list__item icon icon-telegram" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-instagram" target="_blank"></a>
+                                    <a href="#" class="social-list__item icon icon-whatsapp" target="_blank"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 col-xxl-4 footer__col">
+                                <div class="footer-title text_upper text_styling">Меню</div>
+                                <ul class="footer-nav text_size-md">
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Каталог</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Доставка и оплата</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">Обмен и возврат</a></li>
+                                    <li class="footer-nav__item"><a href="#" class="footer-nav__link">О нас</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom text_size-md">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-end align-items-lg-start">
+                        <div class="footer__links d-lg-flex d-xxl-block">
+                            <p><a href="#" class="link_underline">оферта</a></p>
+                            <p><a href="#" class="link_underline">политика конфиденциальности</a></p>
+                        </div>
+                        <div class="footer__design">site design : <a href="#">Ada Ismagilova</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

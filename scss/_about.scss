@@ -1,0 +1,39 @@
+.preview-about{
+    background: url(../img/about.jpg) 0 0 no-repeat, linear-gradient(180.33deg, #716E6C 1.35%, #676563 24.46%, #636262 35.07%, #626160 44.15%, #626260 50%, #666664 87.04%, #666463 88.91%, #666463 94.8%, #666462 100%);
+    background-size: cover;
+    color: #fff;
+    padding-top: 10rem;
+    position: relative;
+    @include bp(xs){
+        background-position: 16% 0;
+    }
+    &__text{
+        width: 40.7%;
+        padding: 10.8rem 0 14.4rem;
+        margin-left: auto;
+        letter-spacing: -0.07rem;
+        @include bp(md){
+            width: 100%;
+            padding: 5rem 0;
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+        p{
+            margin-bottom: 3.5rem;
+            @include bp(md){
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    &__title{
+        font-size: 6.7rem;
+        line-height: 9rem;
+        margin-bottom: 5rem;
+        letter-spacing: 0;
+        @include bp(md){
+            font-size: 3rem;
+            line-height: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+}

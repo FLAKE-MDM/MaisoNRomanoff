@@ -91,6 +91,11 @@
         font: 900 1.7rem/1 "Arial Black", sans-serif;
         border: 1px solid #000;
         border-radius: 50%;
+        .header_inversion &{
+            color: #fff;
+            border-color: #fff;
+            background: rgba(255,255,255,0.2);
+        }
     }
     &-item{
         position: relative;
