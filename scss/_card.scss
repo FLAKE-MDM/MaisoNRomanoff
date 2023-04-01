@@ -18,14 +18,18 @@
             height: 100%;
             object-fit: cover;
         }
+        .swiper-slide{
+            height: auto;
+        }
         &__wrap{
             position: relative;
-            height: 100%;
+            height: 77.3rem;
             @include bp(xl-up){
                 margin: 0 1.8rem 0 0.1rem;
             }
             @include bp(lg){
                 margin-right: -0.5rem;
+                height: 60.8rem;
             }
             @include bp(md){
                 margin: 0 0 1rem;
